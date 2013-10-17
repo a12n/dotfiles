@@ -2,9 +2,6 @@
 
 HISTFILE=$HOME/.kshhst
 HISTSIZE=512
-PS1='$(tput setaf $(($? ? 1 : 11)))$?$(tput sgr0) \
-${USER:=$(id -u -n)}@${HOST:=$(uname -n)} \
-$(tput setaf 2)${PWD/$HOME/~}$(tput sgr0) $ '
 
 export CVS_RSH=ssh
 export EDITOR=emacsclient
@@ -18,8 +15,19 @@ export MANPAGER=less
 alias ec='emacsclient'
 alias h='history'
 alias j='jobs -l'
-alias ls='ls --color=auto -F -a'
+alias ls='ls -aF'
 alias tjt='tar -vtjf'
 alias tzt='tar -vtzf'
 alias xjt='tar -vxjf'
 alias xzt='tar -vxzf'
+
+case $(uname -s) in
+	OpenBSD)
+		PS1='$? \u@\h $(tput setaf 2)\w$(tput sgr0) \$ '
+		;;
+	*)
+		PS1='$(tput setaf $(($? ? 1 : 11)))$?$(tput sgr0) \
+${USER:=$(id -u -n)}@${HOST:=$(uname -n)} \
+$(tput setaf 2)${PWD/$HOME/~}$(tput sgr0) $ '
+		;;
+esac
