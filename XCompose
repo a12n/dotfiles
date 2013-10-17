@@ -29,7 +29,7 @@ include "/usr/share/X11/locale/ru_RU.UTF-8/Compose"
 
 # Maths
 
-<Multi_key> <o> <.>              : "∘"
+<Multi_key> <o> <.>              : "∘" U2218 # RING OPERATOR
 <Multi_key> <slash> <period>     : "⁄" U2044 # FRACTION SLASH
 <Multi_key> <bar> <bar>          : "∣" U2223 # DIVIDES
 
