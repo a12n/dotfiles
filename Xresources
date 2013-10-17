@@ -1,7 +1,7 @@
-Emacs.font: Terminus-12
+Emacs.font: Terminus-14
 
 Rxvt*cursorBlink: true
-Rxvt*font: xft:Terminus:size=12
+Rxvt*font: xft:Terminus:size=14
 Rxvt*pointerBlank: true
 Rxvt*scrollBar: false
 
