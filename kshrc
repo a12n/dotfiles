@@ -21,6 +21,9 @@ alias tzt='tar -vtzf'
 alias xjt='tar -vxjf'
 alias xzt='tar -vxzf'
 
+set -o emacs
+set -o notify
+
 case $(uname -s) in
     OpenBSD)
         PS1='$? \u@\h $(tput setaf 2)\w$(tput sgr0) \$ '
