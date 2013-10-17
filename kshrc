@@ -22,12 +22,12 @@ alias xjt='tar -vxjf'
 alias xzt='tar -vxzf'
 
 case $(uname -s) in
-	OpenBSD)
-		PS1='$? \u@\h $(tput setaf 2)\w$(tput sgr0) \$ '
-		;;
-	*)
-		PS1='$(tput setaf $(($? ? 1 : 11)))$?$(tput sgr0) \
+    OpenBSD)
+        PS1='$? \u@\h $(tput setaf 2)\w$(tput sgr0) \$ '
+        ;;
+    *)
+        PS1='$(tput setaf $(($? ? 1 : 11)))$?$(tput sgr0) \
 ${USER:=$(id -u -n)}@${HOST:=$(uname -n)} \
 $(tput setaf 2)${PWD/$HOME/~}$(tput sgr0) $ '
-		;;
+        ;;
 esac
