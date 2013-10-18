@@ -41,3 +41,7 @@ function ecp {
     TMP=$(mktemp) && cat > $TMP && emacsclient $TMP
     rm -f $TMP
 }
+
+function ncd {
+    mkdir "$1" && cd "$1"
+}
