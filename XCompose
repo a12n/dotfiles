@@ -45,7 +45,7 @@ include "/usr/share/X11/locale/ru_RU.UTF-8/Compose"
 <Multi_key> <Z> <Z>              : "ℤ" U2124 # DOUBLE-STRUCK CAPITAL Z
 <Multi_key> <Q> <Q>              : "ℚ" U211A # DOUBLE-STRUCK CAPITAL Q
 <Multi_key> <R> <R>              : "ℝ" U211D # DOUBLE-STRUCK CAPITAL R
-<Multi_key> <C> <C>              : "ℂ" U2102 # DOUBLE-STRUCK CAPITAL C
+<Multi_key> <X> <X>              : "ℂ" U2102 # DOUBLE-STRUCK CAPITAL C
 
 <Multi_key> <a> <l> <l>          : "∀" U2200 # FOR ALL
 <Multi_key> <e> <x> <i>          : "∃" U2203 # THERE EXISTS
