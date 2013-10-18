@@ -36,3 +36,8 @@ $(tput setaf 2)${PWD/$HOME/~}$(tput sgr0) $ '
         alias ls='ls -aF --color=auto'
         ;;
 esac
+
+function ecp {
+    TMP=$(mktemp) && cat > $TMP && emacsclient $TMP
+    rm -f $TMP
+}
