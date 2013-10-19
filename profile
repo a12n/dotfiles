@@ -3,5 +3,5 @@
 export ENV=$HOME/.kshrc
 export PATH=$HOME/.local/bin:$PATH
 
-ulimit -c $(( (128 * 1024 * 1024) / 512 ))
-ulimit -d $(( 1024 * 1024 ))
+ulimit -c $(( (128 * 1024 * 1024) / 512 )) # 128 MiB
+ulimit -d $(( 1024 * 1024 ))               # 1 GiB
