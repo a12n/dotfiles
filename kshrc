@@ -25,12 +25,13 @@ set -o notify
 
 case $(uname -s) in
     OpenBSD)
+        export LOCALBASE=/usr/local
         if [ "$TERM" == "vt220" ]; then
             TERM=wsvt25
         fi
         PS1='$? \u@\h $(tput setaf 2)\w$(tput sgr0) \$ '
-        if [ -x /usr/local/bin/colorls ]; then
-            alias ls='/usr/local/bin/colorls -aFG'
+        if [ -x $LOCALBASE/bin/colorls ]; then
+            alias ls='$LOCALBASE/bin/colorls -aFG'
         else
             alias ls='ls -aF'
         fi
