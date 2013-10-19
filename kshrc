@@ -26,7 +26,7 @@ set -o notify
 case $(uname -s) in
     OpenBSD)
         if [ "$TERM" == "vt220" ]; then
-            TERM=wsv525
+            TERM=wsvt25
         fi
         PS1='$? \u@\h $(tput setaf 2)\w$(tput sgr0) \$ '
         # TODO: colorls, gls
