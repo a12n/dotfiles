@@ -29,8 +29,11 @@ case $(uname -s) in
             TERM=wsvt25
         fi
         PS1='$? \u@\h $(tput setaf 2)\w$(tput sgr0) \$ '
-        # TODO: colorls, gls
-        alias ls='ls -aF'
+        if [ -x /usr/local/bin/colorls ]; then
+            alias ls='/usr/local/bin/colorls -aFG'
+        else
+            alias ls='ls -aF'
+        fi
         ;;
     *)
         PS1='$(tput setaf $(($? ? 1 : 11)))$?$(tput sgr0) \
