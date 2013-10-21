@@ -1,0 +1,7 @@
+[extensions]
+hgext.color =
+hgext.mq =
+
+[ui]
+username = Anton Yabchinskiy <arn@bestmx.ru>
+verbose = True

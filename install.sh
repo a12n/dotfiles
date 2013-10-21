@@ -5,6 +5,7 @@ for x in \
     XCompose \
     Xresources \
     gitconfig \
+    hgrc \
     kshrc \
     profile \
     xinitrc
