@@ -4,6 +4,7 @@ cd $(dirname $0)
 for x in \
     XCompose \
     Xresources \
+    gitconfig \
     kshrc \
     profile \
     xinitrc
