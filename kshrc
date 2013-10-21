@@ -49,6 +49,12 @@ function ecp {
     rm -f $TMP
 }
 
+function mkorig {
+    for x in "$@"; do
+        cp -Rip "$x" "$x.orig"
+    done
+}
+
 function ncd {
     mkdir "$1" && cd "$1"
 }
