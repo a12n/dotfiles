@@ -51,6 +51,7 @@ function ecp {
 
 function mkorig {
     for x in "$@"; do
+        x=$(realpath $x)
         cp -Rip "$x" "$x.orig"
     done
 }
