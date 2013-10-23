@@ -12,9 +12,11 @@ export LESSHISTFILE=/dev/null
 export LESSSECURE=1
 export MANPAGER=less
 
+alias cporig="mkorig 'cp -Rip'"
 alias ec='emacsclient'
 alias h='history'
 alias j='jobs -l'
+alias mvorig="mkorig 'mv -i'"
 alias tjt='tar -vtjf'
 alias tzt='tar -vtzf'
 alias xjt='tar -vxjf'
@@ -50,9 +52,11 @@ function ecp {
 }
 
 function mkorig {
+    cmd=$1
+    shift
     for x in "$@"; do
         x=$(realpath $x)
-        cp -Rip "$x" "$x.orig"
+        $cmd "$x" "$x.orig"
     done
 }
 
