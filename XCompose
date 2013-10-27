@@ -40,7 +40,7 @@ include "/usr/share/X11/locale/ru_RU.UTF-8/Compose"
 <Multi_key> <slash> <apostrophe> : "′" U2032 # PRIME SYMBOL
 <Multi_key> <e> <l> <e>          : "∈" U2208 # ELEMENT OF
 <Multi_key> <n> <e> <l>          : "∉" U2209 # NOT AN ELEMENT OF
-<Multi_key> <s> <u> <p>          : "⊂" U2282 # SUBSET OF
+<Multi_key> <s> <u> <b>          : "⊂" U2282 # SUBSET OF
 <Multi_key> <n> <s> <u>          : "⊄" U2284 # NOT A SUBSET OF
 
 <Multi_key> <N> <N>              : "ℕ" U2115 # DOUBLE-STRUCK CAPITAL N
