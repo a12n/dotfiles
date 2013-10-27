@@ -42,6 +42,8 @@ include "/usr/share/X11/locale/ru_RU.UTF-8/Compose"
 <Multi_key> <n> <e> <l>          : "∉" U2209 # NOT AN ELEMENT OF
 <Multi_key> <s> <u> <b>          : "⊂" U2282 # SUBSET OF
 <Multi_key> <n> <s> <u>          : "⊄" U2284 # NOT A SUBSET OF
+<Multi_key> <i> <x> <t>          : "∩" U2229 # INTERSECTION
+<Multi_key> <u> <n> <i>          : "∪" U222A # UNION
 
 <Multi_key> <N> <N>              : "ℕ" U2115 # DOUBLE-STRUCK CAPITAL N
 <Multi_key> <Z> <Z>              : "ℤ" U2124 # DOUBLE-STRUCK CAPITAL Z
