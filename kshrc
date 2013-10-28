@@ -26,6 +26,12 @@ set -o emacs
 set -o notify
 
 case $(uname -s) in
+    Linux)
+        PS1='$(tput setaf $(($? ? 1 : 11)))$?$(tput sgr0) \
+${USER:=$(id -u -n)}@${HOST:=$(uname -n)} \
+$(tput setaf 2)${PWD/$HOME/~}$(tput sgr0) $ '
+        alias ls='ls -aF --color=auto'
+        ;;
     OpenBSD)
         export LOCALBASE=/usr/local
         if [ "$TERM" == "vt220" ]; then
@@ -37,12 +43,6 @@ case $(uname -s) in
         else
             alias ls='ls -aF'
         fi
-        ;;
-    *)
-        PS1='$(tput setaf $(($? ? 1 : 11)))$?$(tput sgr0) \
-${USER:=$(id -u -n)}@${HOST:=$(uname -n)} \
-$(tput setaf 2)${PWD/$HOME/~}$(tput sgr0) $ '
-        alias ls='ls -aF --color=auto'
         ;;
 esac
 
