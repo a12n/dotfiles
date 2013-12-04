@@ -4,6 +4,7 @@
 	ci = commit
 	co = checkout
 	dif = diff
+	pul = pull
 	st = status
 
 [color]
