@@ -10,6 +10,9 @@
 [color]
 	ui = auto
 
+[push]
+	default = simple
+
 [user]
 	name = Anton Yabchinskiy
 	email = arn@bestmx.ru
