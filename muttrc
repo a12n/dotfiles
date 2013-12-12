@@ -62,6 +62,7 @@ subscribe "erlang-bugs@erlang\.org"
 subscribe "live-devel@lists\.live555\.com"
 subscribe "misc@openbsd\.org"
 subscribe "ports@openbsd\.org"
+subscribe "sql-2\.0@bestmx\.net"
 subscribe "tech@openbsd\.org"
 
 #
