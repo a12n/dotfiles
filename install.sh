@@ -7,6 +7,8 @@ for x in \
     gitconfig \
     hgrc \
     kshrc \
+    muttrc \
+    muttrc-solarized \
     profile \
     xinitrc
 do
