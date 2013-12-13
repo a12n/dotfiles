@@ -28,7 +28,8 @@ set -o notify
 
 case $(uname -s) in
     Linux)
-        PS1='$? $(id -u -n)@$(uname -n) $(tput setaf 2)${PWD/$HOME/~}$(tput sgr0) $ '
+        PS1='$? $(id -u -n)@$(uname -n) $(tput setaf 1)${SSH_AGENT_PID:+s }\
+$(tput setaf 2)${PWD/$HOME/~}$(tput sgr0) $ '
         alias ls='ls -aF --color=auto'
         ;;
     OpenBSD)
@@ -36,7 +37,8 @@ case $(uname -s) in
         if [ "$TERM" == "vt220" ]; then
             TERM=wsvt25
         fi
-        PS1='$? \u@\h $(tput setaf 2)\w$(tput sgr0) \$ '
+        PS1='$? \u@\h $(tput setaf 1)${SSH_AGENT_PID:+s }
+$(tput setaf 2)\w$(tput sgr0) \$ '
         if [ -x $LOCALBASE/bin/colorls ]; then
             alias ls='$LOCALBASE/bin/colorls -aFG'
         else
