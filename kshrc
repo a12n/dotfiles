@@ -28,8 +28,7 @@ set -o notify
 
 case $(uname -s) in
     Linux)
-        PS1='$? ${USER:=$(id -u -n)}@${HOST:=$(uname -n)} \
-$(tput setaf 2)${PWD/$HOME/~}$(tput sgr0) $ '
+        PS1='$? $(id -u -n)@$(uname -n) $(tput setaf 2)${PWD/$HOME/~}$(tput sgr0) $ '
         alias ls='ls -aF --color=auto'
         ;;
     OpenBSD)
