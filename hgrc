@@ -1,6 +1,7 @@
 [extensions]
 hgext.color =
 hgext.mq =
+hgext.record =
 
 [ui]
 username = Anton Yabchinskiy <arn@bestmx.ru>
