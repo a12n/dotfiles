@@ -1,5 +1,6 @@
 [extensions]
 hgext.color =
+hgext.convert =
 hgext.mq =
 hgext.record =
 
