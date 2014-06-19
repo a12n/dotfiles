@@ -28,8 +28,8 @@
 ! #define SOLARIZED_BASE2   #073642
 ! #define SOLARIZED_BASE3   #002b36
 
-*background: SOLARIZED_BASE03
-*foreground: SOLARIZED_BASE0
+Rxvt*background: SOLARIZED_BASE03
+Rxvt*foreground: SOLARIZED_BASE0
 *fadeColor: SOLARIZED_BASE03
 *cursorColor: SOLARIZED_BASE1
 *pointerColorBackground: SOLARIZED_BASE01
