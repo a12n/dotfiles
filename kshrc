@@ -5,6 +5,7 @@ HISTSIZE=512
 
 export CVS_RSH=ssh
 export EDITOR=emacsclient
+export EMAIL=arn@bestmx.ru
 export GTK_IM_MODULE=xim
 export LANG=ru_RU.UTF-8
 export LESS=RX

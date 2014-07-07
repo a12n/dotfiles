@@ -5,5 +5,5 @@ hgext.mq =
 hgext.record =
 
 [ui]
-username = Anton Yabchinskiy <arn@bestmx.ru>
+username = Anton Yabchinskiy <$EMAIL>
 verbose = True

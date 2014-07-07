@@ -11,7 +11,6 @@ set certificate_file="~/mail/certificates"
 set date_format="%a, %d %b %Y %T %z"
 set edit_headers=yes
 set folder="imaps://mail.bestmx.ru/INBOX/"
-set from="arn@bestmx.ru"
 set header_cache="~/mail/cache"
 set hide_missing=no
 set hide_top_missing=no
