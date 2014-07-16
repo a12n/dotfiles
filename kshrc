@@ -38,7 +38,7 @@ $(tput setaf 2)${PWD/$HOME/~}$(tput sgr0) $ '
         if [ "$TERM" == "vt220" ]; then
             TERM=wsvt25
         fi
-        PS1='$? \u@\h $(tput setaf 1)${SSH_AGENT_PID:+s }
+        PS1='$? \u@\h $(tput setaf 1)${SSH_AGENT_PID:+s }\
 $(tput setaf 2)\w$(tput sgr0) \$ '
         if [ -x $LOCALBASE/bin/colorls ]; then
             alias ls='$LOCALBASE/bin/colorls -aFG'
