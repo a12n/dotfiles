@@ -48,12 +48,12 @@ $(tput setaf 2)\w$(tput sgr0) \$ '
         ;;
 esac
 
-function ecp {
+ecp() {
     TMP=$(mktemp) && cat > $TMP && emacsclient $TMP
     rm -f $TMP
 }
 
-function mkorig {
+mkorig() {
     cmd=$1
     shift
     for x in "$@"; do
@@ -62,6 +62,6 @@ function mkorig {
     done
 }
 
-function ncd {
+ncd() {
     mkdir "$1" && cd "$1"
 }
