@@ -68,12 +68,12 @@ ncd() {
 
 mpdnotify() {
     mpc idleloop player | while read -r EVENT; do
-        if [ $EVENT = player ]; then
+        if [ "$EVENT" = "player" ]; then
             IFS='
 '
             set -- $(mpc status | sed '1p;s/.*\[\(.*\)\].*/\1/p;d')
             unset IFS
-            if [ $2 = playing ]; then
+            if [ "$2" = "playing" ]; then
                 notify-send "$2" "$1"
             fi
         fi
