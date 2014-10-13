@@ -10,6 +10,7 @@ for x in \
     kshrc \
     muttrc \
     muttrc-solarized \
+    ocamlinit \
     profile \
     xinitrc
 do
