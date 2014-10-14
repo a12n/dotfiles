@@ -8,3 +8,5 @@ fi
 
 ulimit -c $(( (128 * 1024 * 1024) / 512 )) # 128 MiB
 ulimit -d $(( 1024 * 1024 ))               # 1 GiB
+
+eval $(opam config env)
