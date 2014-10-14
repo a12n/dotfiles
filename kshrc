@@ -24,6 +24,8 @@ alias tzt='tar -vtzf'
 alias xjt='tar -vxjf'
 alias xzt='tar -vxzf'
 
+alias -d e="/encr/$USER"
+
 set -o emacs
 set -o notify
 
