@@ -4,8 +4,12 @@ hgext.color =
 hgext.convert =
 hgext.git =
 hgext.mq =
+hgext.pager =
 hgext.record =
 hgext.shelve =
+
+[pager]
+pager = less
 
 [ui]
 username = Anton Yabchinskiy <$EMAIL>
