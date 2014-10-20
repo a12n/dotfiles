@@ -5,6 +5,7 @@ hgext.convert =
 hgext.git =
 hgext.mq =
 hgext.record =
+hgext.shelve =
 
 [ui]
 username = Anton Yabchinskiy <$EMAIL>
