@@ -2,8 +2,6 @@
 hgext.bookmarks =
 hgext.color =
 hgext.convert =
-hgext.git =
-hgext.mq =
 hgext.pager =
 hgext.record =
 hgext.shelve =
