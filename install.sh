@@ -12,7 +12,7 @@ for x in \
     muttrc-solarized \
     ocamlinit \
     profile \
-    xinitrc
+    xsession
 do
     if [ -e $HOME/.$x ]; then
         echo "File $HOME/.$x exists"
