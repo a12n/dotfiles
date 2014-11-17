@@ -10,6 +10,9 @@ xsetroot -solid '#002b36'
 case $(uname -s) in
     OpenBSD)
         xset fp+ $LOCALBASE/lib/X11/fonts/terminus/
+        if [ -z "${DBUS_SESSION_BUS_ADDRESS}" ]; then
+	        eval $($LOCALBASE/bin/dbus-launch --sh-syntax --exit-with-session)
+        fi
         ;;
 esac
 
