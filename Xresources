@@ -5,4 +5,8 @@ Rxvt*font: xft:Terminus:size=14
 Rxvt*pointerBlank: true
 Rxvt*scrollBar: false
 
+UXTerm*cursorBlink: true
+UXTerm*faceName: xft:Terminus:size=14
+UXTerm*scrollBar: false
+
 #include ".Xresources-solarized"
