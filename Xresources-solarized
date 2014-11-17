@@ -30,10 +30,10 @@
 
 Rxvt*background: SOLARIZED_BASE03
 Rxvt*foreground: SOLARIZED_BASE0
-*fadeColor: SOLARIZED_BASE03
-*cursorColor: SOLARIZED_BASE1
-*pointerColorBackground: SOLARIZED_BASE01
-*pointerColorForeground: SOLARIZED_BASE1
+Rxvt*fadeColor: SOLARIZED_BASE03
+Rxvt*cursorColor: SOLARIZED_BASE1
+Rxvt*pointerColorBackground: SOLARIZED_BASE01
+Rxvt*pointerColorForeground: SOLARIZED_BASE1
 
 *color0: SOLARIZED_BASE02
 *color1: SOLARIZED_RED
