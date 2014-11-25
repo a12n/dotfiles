@@ -8,8 +8,6 @@ for x in \
     gitconfig \
     hgrc \
     kshrc \
-    muttrc \
-    muttrc-solarized \
     ocamlinit \
     offlineimaprc \
     profile \
