@@ -11,6 +11,7 @@ for x in \
     muttrc \
     muttrc-solarized \
     ocamlinit \
+    offlineimaprc \
     profile \
     xinitrc
 do
