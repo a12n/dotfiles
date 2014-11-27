@@ -64,7 +64,7 @@ mkorig() {
     done
 }
 
-mkcd() {
+ncd() {
     mkdir "$1" && cd "$1"
 }
 
