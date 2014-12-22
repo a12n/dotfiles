@@ -1,5 +1,6 @@
 # -*- mode: conf -*-
 
+include "/usr/X11R6/share/X11/locale/ru_RU.UTF-8/Compose"
 include "/usr/share/X11/locale/ru_RU.UTF-8/Compose"
 
 <Multi_key> <Cyrillic_BE> <Cyrillic_BE> : "«" U00AB # LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
