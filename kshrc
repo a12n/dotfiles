@@ -31,7 +31,7 @@ set -o notify
 
 case $(uname -s) in
     Linux)
-        PS1='$(date +%T) $(tput setaf 1)${SSH_AGENT_PID:+s }$(tput setaf 2)$PWD$(tput sgr0) $? '
+        PS1='$(date +%T) $(tput setaf 1)${SSH_AGENT_PID:+s }$(tput setaf 2)${PWD/$HOME/~}$(tput sgr0) $? '
         alias ls='ls -aF --color=auto'
         ;;
     OpenBSD)
