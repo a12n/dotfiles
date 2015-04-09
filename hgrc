@@ -2,6 +2,7 @@
 hgext.bookmarks =
 hgext.color =
 hgext.convert =
+hgext.extdiff =
 hgext.pager =
 hgext.record =
 hgext.shelve =
@@ -12,3 +13,6 @@ pager = less
 [ui]
 username = Anton Yabchinskiy <$EMAIL>
 verbose = True
+
+[extdiff]
+cmd.pdif = patdiff
