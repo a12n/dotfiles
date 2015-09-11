@@ -9,7 +9,7 @@ xsetroot -solid '#002b36'
 
 case $(uname -s) in
     OpenBSD)
-        find $LOCALBASE/lib/X11/fonts \
+        find $LOCALBASE/share/fonts \
             -type d \
             -mindepth 1 \
             -maxdepth 1 \
