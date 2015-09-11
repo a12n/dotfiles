@@ -20,6 +20,7 @@ case $(uname -s) in
         ;;
 esac
 
+redshift &
 ~/.local/bin/dwmstatus &
 
 exec ~/.local/bin/dwm
