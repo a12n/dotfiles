@@ -1,3 +1,7 @@
+[alias]
+irev = rev -i
+nrev = rev -C
+
 [extensions]
 hgext.bookmarks =
 hgext.color =
