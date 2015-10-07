@@ -5,6 +5,7 @@ for x in \
     XCompose \
     Xresources \
     Xresources-solarized \
+    gdbinit \
     gitconfig \
     hgrc \
     kshrc \
