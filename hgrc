@@ -4,6 +4,9 @@
 irev = rev -i
 nrev = rev -C
 
+[diff]
+git = True
+
 [extensions]
 hgext.bookmarks =
 hgext.color =
