@@ -14,6 +14,7 @@ hgext.color =
 hgext.convert =
 hgext.extdiff =
 hgext.pager =
+hgext.rebase =
 hgext.record =
 hgext.shelve =
 
