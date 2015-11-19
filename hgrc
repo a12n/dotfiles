@@ -1,6 +1,7 @@
 # -*- mode: conf -*-
 
 [alias]
+glog = log -G
 irev = rev -i
 nrev = rev -C
 
