@@ -1,3 +1,5 @@
+# -*- mode: conf -*-
+
 [alias]
 irev = rev -i
 nrev = rev -C
