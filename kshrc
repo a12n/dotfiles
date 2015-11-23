@@ -17,7 +17,6 @@ alias cporig="mkorig 'cp -Rip'"
 alias ec='emacsclient'
 alias h='history'
 alias j='jobs -l'
-alias kssh='ssh-agent ksh'
 alias mvorig="mkorig 'mv -i'"
 alias tjt='tar -vtjf'
 alias tzt='tar -vtzf'
