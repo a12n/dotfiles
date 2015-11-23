@@ -29,7 +29,7 @@ set -o notify
 
 case $(uname -s) in
     Linux)
-        PS1='$(date +%T) $(tput setaf 2)${PWD/$HOME/~}$(tput sgr0) $? '
+        PS1='$(tput setaf 2)${PWD/$HOME/~}$(tput sgr0) $? '
         alias ls='ls -aF --color=auto'
         ;;
     OpenBSD)
@@ -37,7 +37,7 @@ case $(uname -s) in
         if [ "$TERM" == "vt220" ]; then
             TERM=wsvt25
         fi
-        PS1='\t \[$(tput setaf 2)\]\w\[$(tput sgr0) $? '
+        PS1='\[$(tput setaf 2)\]\w\[$(tput sgr0) $? '
         if [ -x $LOCALBASE/bin/colorls ]; then
             alias ls='$LOCALBASE/bin/colorls -aFG'
         else
