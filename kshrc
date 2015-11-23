@@ -55,7 +55,7 @@ mkorig() {
     cmd=$1
     shift
     for x in "$@"; do
-        x=$(realpath $x)
+        x=$(readlink -f $x)
         $cmd "$x" "$x.orig"
     done
 }
