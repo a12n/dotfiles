@@ -51,6 +51,14 @@ ecp() {
     rm -f $TMP
 }
 
+findorig() {
+    dir=$1
+    if [ -z "$dir" ]; then
+        dir=.
+    fi
+    find $dir -name \*.orig
+}
+
 mkorig() {
     cmd=$1
     shift
