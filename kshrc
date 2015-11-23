@@ -3,7 +3,6 @@
 HISTFILE=$HOME/.kshhst
 HISTSIZE=512
 
-export CVS_RSH=ssh
 export EDITOR=emacsclient
 export EMAIL=arn@bestmx.ru
 export GTK_IM_MODULE=xim
