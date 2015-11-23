@@ -35,9 +35,6 @@ Rxvt*cursorColor: SOLARIZED_BASE1
 Rxvt*pointerColorBackground: SOLARIZED_BASE01
 Rxvt*pointerColorForeground: SOLARIZED_BASE1
 
-UXTerm*background: SOLARIZED_BASE03
-UXTerm*foreground: SOLARIZED_BASE0
-
 *color0: SOLARIZED_BASE02
 *color1: SOLARIZED_RED
 *color2: SOLARIZED_GREEN
