@@ -43,6 +43,8 @@ case $(uname -s) in
         else
             alias ls='ls -aF'
         fi
+        bind '[7~'=beginning-of-line
+        bind '[8~'=end-of-line
         ;;
 esac
 
