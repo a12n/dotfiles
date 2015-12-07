@@ -21,6 +21,9 @@ case $(uname -s) in
         ;;
 esac
 
+export RXVT_SOCKET=$(mktemp -d -t urxvt-XXXXXXXXXXX)/urxvtd
+urxvtd --fork --opendisplay
+
 redshift &
 ~/.local/bin/dwmstatus &
 
