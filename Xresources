@@ -1,7 +1,7 @@
-Emacs.font: Droid Sans Mono-12
+Emacs.font: PT Mono-13
 
 Rxvt*cursorBlink: true
-Rxvt*font: xft:Droid Sans Mono:size=12
+Rxvt*font: xft:PT Mono:size=13
 Rxvt*pointerBlank: true
 Rxvt*scrollBar: false
 
