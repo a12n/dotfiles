@@ -18,6 +18,6 @@ do
     if [ -e $HOME/.$x ]; then
         echo "File $HOME/.$x exists"
     else
-        ln -s $PWD/$x $HOME/.$x
+        ln -s $PWD/$x $HOME/.$x || exit 1
     fi
 done
