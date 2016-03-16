@@ -1,5 +1,8 @@
 #!/bin/sh
 
+EXISTS="$(tput setaf 1)EXISTS$(tput sgr0)"
+LINKED="$(tput setaf 2)LINKED$(tput sgr0)"
+
 cd $(dirname $0)
 for x in \
     XCompose \
@@ -16,8 +19,9 @@ for x in \
     xinitrc
 do
     if [ -e $HOME/.$x ]; then
-        echo "File $HOME/.$x exists"
+        echo "$EXISTS $HOME/.$x"
     else
         ln -s $PWD/$x $HOME/.$x || exit 1
+        echo "$LINKED $HOME/.$x"
     fi
 done
