@@ -9,6 +9,7 @@ for x in \
     gitconfig \
     hgrc \
     kshrc \
+    mplayer \
     ocamlinit \
     offlineimaprc \
     profile \
