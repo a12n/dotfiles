@@ -25,3 +25,6 @@ do
         echo "$LINKED $HOME/.$x"
     fi
 done
+
+mkdir -p \
+      $HOME/.local/bin $HOME/proj
