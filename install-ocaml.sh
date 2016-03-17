@@ -11,5 +11,5 @@ if [ ! -d ~/.opam ]; then
 fi
 
 opam install -y \
-     batteries merlin ocp-indent ounit \
+     batteries merlin ocp-indent ounit utop \
     || exit 1
