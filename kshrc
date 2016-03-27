@@ -30,6 +30,7 @@ set -o notify
 case $(uname -s) in
     Linux)
         PS1='$? $(tput setaf 2)${PWD/$HOME/~}$(tput sgr0) '
+        alias cal='ncal -b'
         alias ls='ls -aF --color=auto'
         ;;
     OpenBSD)
