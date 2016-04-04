@@ -1,6 +1,5 @@
 Emacs.font: PT Mono-13
 
-Rxvt*cursorBlink: true
 Rxvt*font: xft:PT Mono:size=13
 Rxvt*pointerBlank: true
 Rxvt*scrollBar: false
