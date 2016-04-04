@@ -12,7 +12,6 @@ git = True
 [extensions]
 hgext.bookmarks =
 hgext.color =
-hgext.convert =
 hgext.extdiff =
 hgext.pager =
 hgext.rebase =
