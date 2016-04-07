@@ -4,7 +4,7 @@ setxkbmap -option 'compose:ralt,ctrl:nocaps,grp:rctrl_toggle' \
           -layout 'us,ru(typewriter),epo,gr(bare)'
 wmname LG3D
 xrdb ~/.Xresources
-xset -b r rate 256 32
+xset -b r rate 200 35
 xsetroot -cursor_name left_ptr
 xsetroot -solid '#002b36'
 
