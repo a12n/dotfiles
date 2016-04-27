@@ -17,6 +17,6 @@ Account devline_ru
 Channel devline_ru
 Master :remote_devline_ru:
 Slave :local_devline_ru:
-Patterns !.procmailrc !mbox
+Patterns *
 Create Both
 CopyArrivalDate yes
