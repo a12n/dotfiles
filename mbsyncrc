@@ -1,12 +1,14 @@
-SyncState ~/mail/.mbsync
+SyncState *
 
 IMAPAccount devline_ru
 Host mail.devline.ru
 User arn@devline.ru
 UseIMAPS yes
+CertificateFile ~/mail/devline_ru.pem
 
 MaildirStore local_devline_ru
-Path ~/mail/arn@devline.ru
+Path ~/mail/arn@devline.ru-alt/
+Inbox ~/mail/arn@devline.ru-alt/INBOX
 Trash Trash
 
 IMAPStore remote_devline_ru
@@ -17,3 +19,4 @@ Master :remote_devline_ru:
 Slave :local_devline_ru:
 Patterns !.procmailrc !mbox
 Create Both
+CopyArrivalDate yes
