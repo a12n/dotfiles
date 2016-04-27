@@ -1,0 +1,19 @@
+SyncState ~/mail/.mbsync
+
+IMAPAccount devline_ru
+Host mail.devline.ru
+User arn@devline.ru
+UseIMAPS yes
+
+MaildirStore local_devline_ru
+Path ~/mail/arn@devline.ru
+Trash Trash
+
+IMAPStore remote_devline_ru
+Account devline_ru
+
+Channel devline_ru
+Master :remote_devline_ru:
+Slave :local_devline_ru:
+Patterns !.procmailrc !mbox
+Create Both
