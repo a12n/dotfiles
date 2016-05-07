@@ -12,6 +12,7 @@ for x in \
     gitconfig \
     hgrc \
     kshrc \
+    latexmkrc \
     mplayer \
     ocamlinit \
     offlineimaprc \
