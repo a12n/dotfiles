@@ -1,6 +1,6 @@
-Emacs.font: PT Mono-13
+Emacs.font: PT Mono-14
 
-Rxvt*font: xft:PT Mono:size=13
+Rxvt*font: xft:PT Mono:size=14
 Rxvt*pointerBlank: true
 Rxvt*scrollBar: false
 
