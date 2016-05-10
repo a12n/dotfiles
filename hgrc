@@ -18,6 +18,9 @@ hgext.rebase =
 hgext.record =
 hgext.shelve =
 
+[hostfingerprints]
+repo.local = 0a:bd:a3:5f:1e:3f:99:62:04:ba:8c:29:ae:9a:2f:ea:c0:39:cb:90
+
 [pager]
 pager = less
 
