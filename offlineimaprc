@@ -1,7 +1,7 @@
 # -*- conf -*-
 
 [general]
-accounts = bestmx_net,bestmx_ru
+accounts = devline_ru
 metadata = ~/mail/.offlineimap
 maxsyncaccounts = 2
 
