@@ -24,7 +24,7 @@ esac
 export RXVT_SOCKET=$(mktemp -d -t urxvt-XXXXXXXXXXX)/urxvtd
 urxvtd --fork --opendisplay
 
-redshift -l 45.035:38.974 &
+redshift &
 ~/.local/bin/dwmstatus &
 
 exec ~/.local/bin/dwm
