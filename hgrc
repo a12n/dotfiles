@@ -17,6 +17,7 @@ hgext.pager =
 hgext.rebase =
 hgext.record =
 hgext.shelve =
+hgext.strip =
 
 [pager]
 pager = less
