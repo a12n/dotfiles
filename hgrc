@@ -1,6 +1,8 @@
 # -*- mode: conf -*-
 
 [alias]
+br = branch
+brs = branches
 glog = log -G
 irev = rev -i
 nrev = rev -C
