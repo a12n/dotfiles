@@ -14,6 +14,7 @@ for x in \
     kshrc \
     latexmkrc \
     mplayer \
+    mplayer2 \
     ocamlinit \
     offlineimaprc \
     profile \
