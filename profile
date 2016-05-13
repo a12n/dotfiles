@@ -1,7 +1,7 @@
 # -*- mode: sh -*-
 
-export ENV=$HOME/.kshrc
-export PATH=$HOME/.local/bin:$PATH
+export ENV=~/.kshrc
+export PATH=~/.local/bin:$PATH
 if [ -d /usr/lib/ccache ]; then
     export PATH=/usr/lib/ccache:$PATH
 fi

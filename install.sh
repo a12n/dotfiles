@@ -20,13 +20,13 @@ for x in \
     profile \
     xinitrc
 do
-    if [ -e $HOME/.$x ]; then
-        echo "$EXISTS $HOME/.$x"
+    if [ -e ~/.$x ]; then
+        echo "$EXISTS ~/.$x"
     else
-        ln -s $PWD/$x $HOME/.$x || exit 1
-        echo "$LINKED $HOME/.$x"
+        ln -s $PWD/$x ~/.$x || exit 1
+        echo "$LINKED ~/.$x"
     fi
 done
 
 mkdir -p \
-      $HOME/.local/bin $HOME/proj
+      ~/.local/bin ~/proj

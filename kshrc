@@ -1,6 +1,6 @@
 # -*- mode: sh -*-
 
-HISTFILE=$HOME/.kshhst
+HISTFILE=~/.kshhst
 HISTSIZE=512
 
 export EDITOR=emacsclient
