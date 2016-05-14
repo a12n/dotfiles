@@ -12,7 +12,6 @@ rec = record
 git = True
 
 [extensions]
-hgext.bookmarks =
 hgext.color =
 hgext.extdiff =
 hgext.pager =
