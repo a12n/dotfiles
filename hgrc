@@ -36,3 +36,4 @@ cmd.pdif = patdiff
 
 [schemes]
 b = ssh://hg@bitbucket.org/a12n/
+r = https://arn@repo.local/
