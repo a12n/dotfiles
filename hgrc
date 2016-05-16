@@ -8,6 +8,7 @@ irev = rev -i
 md = merge default
 nrev = rev -C
 rec = record
+ud = update default
 
 [diff]
 git = True
