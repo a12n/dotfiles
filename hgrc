@@ -5,6 +5,7 @@ br = branch
 brs = branches
 glog = log -G
 irev = rev -i
+md = merge default
 nrev = rev -C
 rec = record
 
