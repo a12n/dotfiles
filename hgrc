@@ -3,6 +3,7 @@
 [alias]
 br = branch
 brs = branches
+cmd = commit -m "Merge branch 'default'"
 glog = log -G
 irev = rev -i
 md = merge default
