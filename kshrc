@@ -62,6 +62,10 @@ findorig() {
     find $dir -name \*.orig
 }
 
+fngrep() {
+    grep -IR "$@" | cut -d : -f 1 | sort | uniq
+}
+
 mkorig() {
     cmd=$1
     shift
