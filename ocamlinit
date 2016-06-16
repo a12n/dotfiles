@@ -5,3 +5,4 @@ let () =
   with Not_found -> ();;
 #use "topfind";;
 #require "batteries";;
+open Batteries;;
