@@ -36,4 +36,4 @@ cmd.pdif = patdiff
 
 [schemes]
 b = ssh://hg@bitbucket.org/a12n/
-b2 = https://bitbucket.org/a12n/
+b2 = https://a12n@bitbucket.org/a12n/
