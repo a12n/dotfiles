@@ -7,7 +7,6 @@ cd $(dirname $0)
 for x in \
     XCompose \
     Xresources \
-    Xresources-solarized \
     gdbinit \
     gitconfig \
     hgrc \
