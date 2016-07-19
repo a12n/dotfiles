@@ -9,5 +9,6 @@ fi
 ulimit -c 0
 ulimit -d $(( 1024 * 1024 ))               # 1 GiB
 
-eval $(opam config env)
+. ~/.opam/opam-init/init.sh
+
 eval $(ssh-agent)
