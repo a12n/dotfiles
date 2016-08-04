@@ -19,6 +19,7 @@ alias j='jobs -l'
 alias mvorig="mkorig 'mv -i'"
 alias tjt='tar -vtjf'
 alias tzt='tar -vtzf'
+alias wx='curl wttr.in/krr'
 alias xjt='tar -vxjf'
 alias xzt='tar -vxzf'
 
