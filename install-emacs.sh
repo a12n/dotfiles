@@ -8,7 +8,7 @@ if [ ! -e ~/.emacs.d ]; then
 fi
 
 for f in \
-    backup secret.el xmpp
+    backup jabber-history secret.el
 do
     ln -s $ENCR/emacs-$f ~/.emacs.d/$f || exit 1
     echo "OK ~/.emacs.d/$f"
