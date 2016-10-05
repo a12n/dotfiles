@@ -35,6 +35,9 @@ include "%L"
 <Multi_key> <slash> <period>     : "⁄" U2044 # FRACTION SLASH
 <Multi_key> <bar> <bar>          : "∣" U2223 # DIVIDES
 
+<Multi_key> <asterisk> <period>  : "⋅" U22C5 # DOT OPERATOR
+<Multi_key> <asterisk> <x>       : "⨯" U2A2F # VECTOR OR CROSS PRODUCT
+
 <Multi_key> <d> <e> <r>          : "∂" U2202 # PARTIAL DIFFERENTIAL
 <Multi_key> <I> <I>              : "∫" U222B # INTEGRAL
 <Multi_key> <slash> <apostrophe> : "′" U2032 # PRIME SYMBOL
