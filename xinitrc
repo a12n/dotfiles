@@ -25,6 +25,11 @@ export RXVT_SOCKET=$(mktemp -d -t urxvt-XXXXXXXXXXX)/urxvtd
 urxvtd --fork --opendisplay
 
 redshift &
-~/.local/bin/dwmstatus &
+
+cat<<EOF | ~/.local/bin/dwmstatus /dev/stdin &
+loadavg 3
+maildir 60
+time 1
+EOF
 
 exec ~/.local/bin/dwm
