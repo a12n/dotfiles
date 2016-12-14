@@ -12,6 +12,7 @@ export LESSHISTFILE=/dev/null
 export LESSSECURE=1
 export MANPAGER=less
 
+alias ckmail='pkill -USR1 offlineimap'
 alias cporig="mkorig 'cp -Rip'"
 alias ec='emacsclient'
 alias h='history'
