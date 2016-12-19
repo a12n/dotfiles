@@ -1,7 +1,7 @@
 # -*- conf -*-
 
 [general]
-accounts = bestmx_net,bestmx_ru
+accounts = bestmx_net
 metadata = ~/mail/.offlineimap
 maxsyncaccounts = 2
 
@@ -22,28 +22,6 @@ nametrans = lambda folder: folder if (folder == 'INBOX') else ('INBOX.' + folder
 type = IMAP
 remotehost = mail.bestmx.net
 remoteusereval = raw_input("Enter username for account 'remote_bestmx_net': ")
-maxconnections = 2
-ssl = yes
-cert_fingerprint = 45a2a9ed4e452fad513d58d00e4276399f958d40
-nametrans = lambda folder: folder.replace('INBOX/', '')
-
-########################################################################
-# arn@bestmx.ru
-
-[Account bestmx_ru]
-autorefresh = 5
-localrepository = local_bestmx_ru
-remoterepository = remote_bestmx_ru
-
-[Repository local_bestmx_ru]
-type = Maildir
-localfolders = ~/mail/arn@bestmx.ru
-nametrans = lambda folder: folder if (folder == 'INBOX') else ('INBOX.' + folder)
-
-[Repository remote_bestmx_ru]
-type = IMAP
-remotehost = mail.bestmx.ru
-remoteusereval = raw_input("Enter username for account 'remote_bestmx_ru': ")
 maxconnections = 2
 ssl = yes
 cert_fingerprint = 45a2a9ed4e452fad513d58d00e4276399f958d40
