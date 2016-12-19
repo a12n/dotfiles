@@ -31,7 +31,6 @@ loadavg 3
 cputemp 3
 battery 10
 maildir 60
-maildir 60 $HOME/mail/${EMAIL%net}ru/INBOX
 time 1
 EOF
 
