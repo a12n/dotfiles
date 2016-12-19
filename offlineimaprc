@@ -26,24 +26,3 @@ maxconnections = 2
 ssl = yes
 cert_fingerprint = 45a2a9ed4e452fad513d58d00e4276399f958d40
 nametrans = lambda folder: folder.replace('INBOX/', '')
-
-########################################################################
-# arn@devline.ru
-
-[Account devline_ru]
-autorefresh = 5
-localrepository = local_devline_ru
-remoterepository = remote_devline_ru
-
-[Repository local_devline_ru]
-type = Maildir
-localfolders = ~/mail/arn@devline.ru
-
-[Repository remote_devline_ru]
-type = IMAP
-remotehost = mail.devline.ru
-remoteusereval = raw_input("Enter username for account 'remote_devline_ru': ")
-maxconnections = 2
-cert_fingerprint = ab5ab47c831f838ef3a83e50b7a70a8aab010f59
-ssl = yes
-folderfilter = lambda folder: folder not in ['.procmailrc', 'mbox']
