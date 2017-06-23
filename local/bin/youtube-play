@@ -1,3 +1,0 @@
-#!/bin/sh
-
-exec mplayer --cache=16384 --cache-min=1 $(youtube-dl -g --prefer-insecure "$@")
