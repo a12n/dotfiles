@@ -12,8 +12,6 @@ for x in \
     hgrc \
     kshrc \
     latexmkrc \
-    mplayer \
-    mplayer2 \
     ocamlinit \
     offlineimaprc \
     profile \
