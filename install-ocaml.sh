@@ -1,6 +1,6 @@
 #!/bin/sh
 
-OCAML_VSN=4.04.0
+OCAML_VSN=4.04.1
 
 if [ ! -d ~/.opam ]; then
     if which ocaml > /dev/null; then
