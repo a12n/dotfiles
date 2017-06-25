@@ -5,6 +5,7 @@ HISTSIZE=512
 
 export EDITOR=emacsclient
 export EMAIL=arn@bestmx.net
+export ERL_AFLAGS="-kernel shell_history enabled"
 export GTK_IM_MODULE=xim
 export LANG=ru_RU.UTF-8
 export LESS=RX
