@@ -1,0 +1,72 @@
+#!/usr/bin/env python3
+
+from datetime import date, datetime, timedelta
+from os.path import expanduser
+from urllib.request import urlopen
+import codecs
+import csv
+import pickle
+import sys
+
+#####################
+# Non-business days #
+#####################
+
+NONBIZ_CACHE = expanduser("~/.cache/nonbiz")
+
+def load_nonbiz_cache():
+    with open(NONBIZ_CACHE, "rb") as f:
+        return pickle.load(f)
+
+def dump_nonbiz_cache(days):
+    with open(NONBIZ_CACHE, "wb") as f:
+        pickle.dump(days, f)
+
+def fetch_nonbiz():
+    def from_csv(f):
+        next(f)                     # Ignore header line
+        return {int(year_data[0]):
+                {month: set(map(int, filter(str.isdigit, year_data[month].split(","))))
+                 for month in range(1, 12 + 1)}
+                for year_data in csv.reader(f)}
+    url = "http://data.gov.ru/opendata/7708660670-proizvcalendar" \
+          "/data-20170606T1225-structure-20170606T1225.csv"
+    with urlopen(url) as f:
+        return from_csv(codecs.getreader("utf-8")(f))
+
+try:
+    nonbiz_days = load_nonbiz_cache()
+except FileNotFoundError:
+    nonbiz_days = fetch_nonbiz()
+    dump_nonbiz_cache(nonbiz_days)
+
+def is_nonbiz(date):
+    return date.day in nonbiz_days[date.year][date.month]
+
+############################
+# Business days calculator #
+############################
+
+def biz_days_offset(date, num_days):
+    delta = timedelta(days=(-1 if num_days < 0 else 1))
+    for _ in range(0, abs(num_days)):
+        while is_nonbiz(date):
+            date += delta
+        date += delta
+    return date
+
+########
+# Main #
+########
+
+if __name__ == "__main__":
+    date = date.today()
+    num_days = 10
+    if len(sys.argv) == 2:
+        num_days = int(sys.argv[1])
+    elif len(sys.argv) == 3:
+        date = datetime.strptime(sys.argv[1], '%Y-%m-%d').date()
+        num_days = int(sys.argv[2])
+    elif len(sys.argv) != 1:
+        sys.exit("Usage: {} [num_days] | [date num_days]".format(sys.argv[0]))
+    print(biz_days_offset(date, num_days))
