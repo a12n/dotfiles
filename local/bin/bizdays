@@ -50,9 +50,9 @@ def is_nonbiz(date):
 def biz_days_offset(date, num_days):
     delta = timedelta(days=(-1 if num_days < 0 else 1))
     for _ in range(0, abs(num_days)):
+        date += delta
         while is_nonbiz(date):
             date += delta
-        date += delta
     return date
 
 ########
