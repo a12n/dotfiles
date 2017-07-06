@@ -59,13 +59,31 @@ def biz_days_offset(date, num_days):
 # Main #
 ########
 
+def parse_date(s):
+    def current_year(d):
+        return d.replace(year=date.today().year)
+    def current_month(d):
+        today = date.today()
+        return d.replace(year=today.year, month=today.month)
+    formats = { '%Y-%m-%d': lambda date: date,
+                '%Y%m%d': lambda date: date,
+                '%m-%d': current_year,
+                '%m%d': current_year,
+                '%d': current_month }
+    for fmt, pp in formats.items():
+        try:
+            return pp(datetime.strptime(s, fmt).date())
+        except ValueError:
+            pass
+    raise ValueError
+
 if __name__ == "__main__":
     date = date.today()
     num_days = 10
     if len(sys.argv) == 2:
         num_days = int(sys.argv[1])
     elif len(sys.argv) == 3:
-        date = datetime.strptime(sys.argv[1], '%Y-%m-%d').date()
+        date = parse_date(sys.argv[1])
         num_days = int(sys.argv[2])
     elif len(sys.argv) != 1:
         sys.exit("Usage: {} [num_days] | [date num_days]".format(sys.argv[0]))
