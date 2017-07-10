@@ -31,7 +31,7 @@ loadavg 3
 cputemp 3
 battery 10
 maildir 60
-time 1
+utime 1
 EOF
 
 exec ~/.local/bin/dwm
