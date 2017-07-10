@@ -5,6 +5,11 @@ include "%L"
 <Multi_key> <Cyrillic_BE> <Cyrillic_BE> : "«" U00AB # LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
 <Multi_key> <Cyrillic_YU> <Cyrillic_YU> : "»" U00BB # RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
 
+<Multi_key> <Cyrillic_ER> <equal> : "₽" U20BD # RUBLE SIGN
+<Multi_key> <equal> <Cyrillic_ER> : "₽" U20BD # RUBLE SIGN
+<Multi_key> <P> <equal>           : "₽" U20BD # RUBLE SIGN
+<Multi_key> <equal> <P>           : "₽" U20BD # RUBLE SIGN
+
 # Dashes/hyphens
 
 <Multi_key> <minus> <period>     : "‐" U2010 # HYHPEN
