@@ -10,7 +10,7 @@ from subprocess import PIPE, Popen
 for v in csv.reader(urllib.urlopen("http://www.vpngate.net/api/iphone/")):
     if v[0].startswith("#") or v[0].startswith("*"):
         continue
-    if v[6] in sys.argv[1:]:
+    if v[6] in sys.argv[1:] or v[1] in sys.argv[1:]:
         print "\33[33m====", v[1], v[5], "====\33[0m"
         continue
     print "\33[34m====", v[1], v[5], "====\33[0m"
