@@ -30,6 +30,8 @@ alias -d e="/encr/$USER"
 set -o emacs
 set -o notify
 
+bind '^L'=clear-screen
+
 case $(uname -s) in
     Linux)
         PS1='$? $(tput setaf 2)${PWD/$HOME/~}$(tput sgr0) '
