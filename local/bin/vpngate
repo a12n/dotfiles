@@ -1,13 +1,16 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import base64
+import codecs
 import csv
 import sys
-import urllib
 
 from subprocess import PIPE, Popen
+from urllib.request import urlopen
 
-for v in csv.reader(urllib.urlopen("http://www.vpngate.net/api/iphone/")):
+data = urlopen("http://www.vpngate.net/api/iphone/")
+decode = codecs.getreader("utf-8")
+for v in csv.reader(decode(data)):
     if v[0].startswith("#") or v[0].startswith("*"):
         continue
     if v[6] in sys.argv[1:] or v[1] in sys.argv[1:]:
