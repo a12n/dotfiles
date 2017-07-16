@@ -8,15 +8,19 @@ import sys
 from subprocess import PIPE, Popen
 from urllib.request import urlopen
 
+YELLOW = "\33[33m"
+BLUE = "\33[34m"
+NORMAL = "\33[0m"
+
 data = urlopen("http://www.vpngate.net/api/iphone/")
 decode = codecs.getreader("utf-8")
 for v in csv.reader(decode(data)):
     if v[0].startswith("#") or v[0].startswith("*"):
         continue
     if v[6] in sys.argv[1:] or v[1] in sys.argv[1:]:
-        print("\33[33m====", v[1], v[5], "====\33[0m")
+        print(YELLOW, "====", v[1], v[5], "====", NORMAL)
         continue
-    print("\33[34m====", v[1], v[5], "====\33[0m")
+    print(BLUE, "====", v[1], v[5], "====\33[0m", NORMAL)
     openvpn = Popen(["sudo", "openvpn", "/dev/stdin"], stdin=PIPE)
     openvpn.stdin.write(base64.b64decode(v[14]))
     openvpn.stdin.close()
