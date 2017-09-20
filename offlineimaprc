@@ -24,5 +24,5 @@ remotehost = mail.bestmx.net
 remoteusereval = raw_input("Enter username for account 'remote_bestmx_net': ")
 maxconnections = 2
 ssl = yes
-cert_fingerprint = 687ea268cefcb8f7b974d0de6d21a931089537b6
+cert_fingerprint = 70a03370cd5f57fff328fd551308b3c6dd5ffa82
 nametrans = lambda folder: folder.replace('INBOX/', '')
