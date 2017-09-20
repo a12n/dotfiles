@@ -11,5 +11,5 @@ if [ ! -d ~/.opam ]; then
 fi
 
 opam install -y \
-     batteries menhir merlin ocp-indent patdiff qtest utop \
+     batteries menhir merlin ocp-indent qtest utop \
     || exit 1
