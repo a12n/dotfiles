@@ -34,7 +34,7 @@ bind '^L'=clear-screen
 
 case $(uname -s) in
     Linux)
-        PS1='$? $(tput setaf 2)${PWD/$HOME/~}$(tput sgr0) '
+        PS1='$? ${SSH_CONNECTION:+"$USER@$(hostname) "}$(tput setaf 2)${PWD/$HOME/~}$(tput sgr0) '
         alias cal='ncal -b'
         alias grep='grep --color=auto'
         alias ls='ls -aF --color=auto'
@@ -44,7 +44,7 @@ case $(uname -s) in
         if [ "$TERM" == "vt220" ]; then
             TERM=wsvt25
         fi
-        PS1='$? \[$(tput setaf 2)\]\w\[$(tput sgr0) '
+        PS1='$? ${SSH_CONNECTION:+"\u@\h "}\[$(tput setaf 2)\]\w\[$(tput sgr0) '
         if [ -x $LOCALBASE/bin/colorls ]; then
             alias ls='$LOCALBASE/bin/colorls -aFG'
         else
