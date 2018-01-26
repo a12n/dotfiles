@@ -30,7 +30,7 @@ def fetch_nonbiz():
                  for month in range(1, 12 + 1)}
                 for year_data in csv.reader(f)}
     url = "http://data.gov.ru/opendata/7708660670-proizvcalendar" \
-          "/data-20170606T1225-structure-20170606T1225.csv"
+          "/data-20171211T1403-structure-20171211T1403.csv"
     with urlopen(url) as f:
         return from_csv(codecs.getreader("utf-8")(f))
 
