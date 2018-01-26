@@ -4,6 +4,7 @@
 accounts = bestmx_net
 metadata = ~/mail/.offlineimap
 maxsyncaccounts = 2
+ui = basic
 
 ########################################################################
 # arn@bestmx.net
