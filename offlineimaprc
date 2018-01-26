@@ -9,7 +9,6 @@ maxsyncaccounts = 2
 # arn@bestmx.net
 
 [Account bestmx_net]
-autorefresh = 5
 localrepository = local_bestmx_net
 remoterepository = remote_bestmx_net
 
