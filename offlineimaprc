@@ -21,7 +21,6 @@ nametrans = lambda folder: folder if (folder == 'INBOX') else ('INBOX.' + folder
 [Repository remote_bestmx_net]
 type = IMAP
 remotehost = mail.bestmx.net
-remoteusereval = raw_input("Enter username for account 'remote_bestmx_net': ")
 maxconnections = 2
 ssl = yes
 cert_fingerprint = b510924693e1826b025671174a8888262d563803
