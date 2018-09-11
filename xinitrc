@@ -27,10 +27,10 @@ urxvtd --fork --opendisplay
 redshift &
 
 cat<<EOF | ~/.local/bin/dwmstatus &
-loadavg 3
+loadavg 5
 cputemp 3
-battery 10
-maildir 60 "${HOME}/mail/${EMAIL}/INBOX" "${HOME}/mail/${EMAIL}/Work"
+battery 5
+maildir 90 "${HOME}/mail/${EMAIL}/INBOX" "${HOME}/mail/${EMAIL}/Work"
 utime 1
 EOF
 
