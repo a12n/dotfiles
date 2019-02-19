@@ -1,3 +1,5 @@
+! -*- mode: xrdb -*-
+
 #ifndef FONT_SIZE
 #   if (HEIGHT >= 1000)
 #       define FONT_SIZE 14
