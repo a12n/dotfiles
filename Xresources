@@ -64,7 +64,7 @@ Rxvt*scrollBar: false
 *color14: SOLARIZED_BASE1
 *color15: SOLARIZED_BASE3
 
-#elif defined _GRUVBOX
+#else
 # define GRUVBOX_DARK0            #282828
 # define GRUVBOX_DARK1            #3c3836
 # define GRUVBOX_DARK2            #504945
