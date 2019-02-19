@@ -1,11 +1,11 @@
 ! -*- mode: xrdb -*-
 
 #ifndef FONT_SIZE
-#   if (HEIGHT >= 1000)
-#       define FONT_SIZE 14
-#   else
-#       define FONT_SIZE 13
-#   endif
+# if (HEIGHT >= 1000)
+#  define FONT_SIZE 15
+# else
+#  define FONT_SIZE 13
+# endif
 #endif
 
 Emacs.font: PT Mono-FONT_SIZE
