@@ -14,41 +14,39 @@ Rxvt*font: xft:PT Mono:size=FONT_SIZE
 Rxvt*pointerBlank: true
 Rxvt*scrollBar: false
 
-#define SOLARIZED_YELLOW  #b58900
-#define SOLARIZED_ORANGE  #cb4b16
-#define SOLARIZED_RED     #dc322f
-#define SOLARIZED_MAGENTA #d33682
-#define SOLARIZED_VIOLET  #6c71c4
-#define SOLARIZED_BLUE    #268bd2
-#define SOLARIZED_CYAN    #2aa198
-#define SOLARIZED_GREEN   #859900
-#ifdef SOLARIZED_LIGHT
-#   define SOLARIZED_BASE03  #fdf6e3
-#   define SOLARIZED_BASE02  #eee8d5
-#   define SOLARIZED_BASE01  #93a1a1
-#   define SOLARIZED_BASE00  #839496
-#   define SOLARIZED_BASE0   #657b83
-#   define SOLARIZED_BASE1   #586e75
-#   define SOLARIZED_BASE2   #073642
-#   define SOLARIZED_BASE3   #002b36
-#else
-#   define SOLARIZED_BASE03  #002b36
-#   define SOLARIZED_BASE02  #073642
-#   define SOLARIZED_BASE01  #586e75
-#   define SOLARIZED_BASE00  #657b83
-#   define SOLARIZED_BASE0   #839496
-#   define SOLARIZED_BASE1   #93a1a1
-#   define SOLARIZED_BASE2   #eee8d5
-#   define SOLARIZED_BASE3   #fdf6e3
-#endif
+! Colors
 
-Rxvt*background: SOLARIZED_BASE03
-Rxvt*foreground: SOLARIZED_BASE0
-Rxvt*fadeColor: SOLARIZED_BASE03
-Rxvt*cursorColor: SOLARIZED_BASE1
-Rxvt*pointerColorBackground: SOLARIZED_BASE01
-Rxvt*pointerColorForeground: SOLARIZED_BASE1
+#if defined _SOLARIZED
+# define SOLARIZED_YELLOW  #b58900
+# define SOLARIZED_ORANGE  #cb4b16
+# define SOLARIZED_RED     #dc322f
+# define SOLARIZED_MAGENTA #d33682
+# define SOLARIZED_VIOLET  #6c71c4
+# define SOLARIZED_BLUE    #268bd2
+# define SOLARIZED_CYAN    #2aa198
+# define SOLARIZED_GREEN   #859900
+# ifdef _LIGHT
+#  define SOLARIZED_BASE03  #fdf6e3
+#  define SOLARIZED_BASE02  #eee8d5
+#  define SOLARIZED_BASE01  #93a1a1
+#  define SOLARIZED_BASE00  #839496
+#  define SOLARIZED_BASE0   #657b83
+#  define SOLARIZED_BASE1   #586e75
+#  define SOLARIZED_BASE2   #073642
+#  define SOLARIZED_BASE3   #002b36
+# else
+#  define SOLARIZED_BASE03  #002b36
+#  define SOLARIZED_BASE02  #073642
+#  define SOLARIZED_BASE01  #586e75
+#  define SOLARIZED_BASE00  #657b83
+#  define SOLARIZED_BASE0   #839496
+#  define SOLARIZED_BASE1   #93a1a1
+#  define SOLARIZED_BASE2   #eee8d5
+#  define SOLARIZED_BASE3   #fdf6e3
+# endif
 
+*background: SOLARIZED_BASE03
+*foreground: SOLARIZED_BASE0
 *color0: SOLARIZED_BASE02
 *color1: SOLARIZED_RED
 *color2: SOLARIZED_GREEN
@@ -65,3 +63,5 @@ Rxvt*pointerColorForeground: SOLARIZED_BASE1
 *color13: SOLARIZED_VIOLET
 *color14: SOLARIZED_BASE1
 *color15: SOLARIZED_BASE3
+
+#endif
