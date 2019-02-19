@@ -25,6 +25,7 @@ export RXVT_SOCKET=$(mktemp -d -t urxvt-XXXXXXXXXXX)/urxvtd
 urxvtd --fork --opendisplay
 
 redshift &
+xss-lock slock &
 
 cat<<EOF | ~/.local/bin/dwmstatus &
 loadavg 5
