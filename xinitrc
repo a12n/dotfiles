@@ -3,7 +3,7 @@
 setxkbmap -option 'compose:ralt,ctrl:nocaps,grp:rctrl_toggle' \
           -layout 'us,ru(typewriter),epo,gr(bare)'
 wmname LG3D
-xrdb -D_GRUVBOX ~/.Xresources
+xrdb ~/.Xresources
 xset -b r rate 200 35
 xsetroot -cursor_name left_ptr
 xsetroot -solid '#3c3836'
