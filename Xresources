@@ -64,4 +64,80 @@ Rxvt*scrollBar: false
 *color14: SOLARIZED_BASE1
 *color15: SOLARIZED_BASE3
 
+#elif defined _GRUVBOX
+# define GRUVBOX_DARK0            #282828
+# define GRUVBOX_DARK1            #3c3836
+# define GRUVBOX_DARK2            #504945
+# define GRUVBOX_DARK3            #665c54
+# define GRUVBOX_DARK4            #7c6f64
+# define GRUVBOX_GRAY             #928374
+# define GRUVBOX_LIGHT0           #fbf1c7
+# define GRUVBOX_LIGHT1           #ebdbb2
+# define GRUVBOX_LIGHT2           #d5c4a1
+# define GRUVBOX_LIGHT3           #bdae93
+# define GRUVBOX_LIGHT4           #a89984
+# define GRUVBOX_BRIGHT_RED       #fb4934
+# define GRUVBOX_BRIGHT_GREEN     #b8bb26
+# define GRUVBOX_BRIGHT_YELLOW    #fabd2f
+# define GRUVBOX_BRIGHT_BLUE      #83a598
+# define GRUVBOX_BRIGHT_PURPLE    #d3869b
+# define GRUVBOX_BRIGHT_AQUA      #8ec07c
+# define GRUVBOX_BRIGHT_ORANGE    #fe8019
+# define GRUVBOX_NEUTRAL_RED      #cc241d
+# define GRUVBOX_NEUTRAL_GREEN    #98971a
+# define GRUVBOX_NEUTRAL_YELLOW   #d79921
+# define GRUVBOX_NEUTRAL_BLUE     #458588
+# define GRUVBOX_NEUTRAL_PURPLE   #b16286
+# define GRUVBOX_NEUTRAL_AQUA     #689d6a
+# define GRUVBOX_NEUTRAL_ORANGE   #d65d0e
+# define GRUVBOX_FADED_RED        #9d0006
+# define GRUVBOX_FADED_GREEN      #79740e
+# define GRUVBOX_FADED_YELLOW     #b57614
+# define GRUVBOX_FADED_BLUE       #076678
+# define GRUVBOX_FADED_PURPLE     #8f3f71
+# define GRUVBOX_FADED_AQUA       #427b58
+# define GRUVBOX_FADED_ORANGE     #af3a03
+# if defined _LIGHT
+
+*background: GRUVBOX_LIGHT0
+*foreground: GRUVBOX_DARK1
+*color0:  #fdf4c1
+*color8:  GRUVBOX_GRAY
+*color1:  GRUVBOX_NEUTRAL_RED
+*color9:  GRUVBOX_FADED_RED
+*color2:  GRUVBOX_NEUTRAL_GREEN
+*color10: GRUVBOX_FADED_GREEN
+*color3:  GRUVBOX_NEUTRAL_YELLOW
+*color11: GRUVBOX_FADED_YELLOW
+*color4:  GRUVBOX_NEUTRAL_BLUE
+*color12: GRUVBOX_FADED_BLUE
+*color5:  GRUVBOX_NEUTRAL_PURPLE
+*color13: GRUVBOX_FADED_PURPLE
+*color6:  GRUVBOX_NEUTRAL_AQUA
+*color14: GRUVBOX_FADED_AQUA
+*color7:  GRUVBOX_DARK4
+*color15: GRUVBOX_DARK1
+
+# else
+
+*background: GRUVBOX_DARK0
+*foreground: GRUVBOX_LIGHT1
+*color0:  GRUVBOX_DARK0
+*color8:  GRUVBOX_GRAY
+*color1:  GRUVBOX_NEUTRAL_RED
+*color9:  GRUVBOX_BRIGHT_RED
+*color2:  GRUVBOX_NEUTRAL_GREEN
+*color10: GRUVBOX_BRIGHT_GREEN
+*color3:  GRUVBOX_NEUTRAL_YELLOW
+*color11: GRUVBOX_BRIGHT_YELLOW
+*color4:  GRUVBOX_NEUTRAL_BLUE
+*color12: GRUVBOX_BRIGHT_BLUE
+*color5:  GRUVBOX_NEUTRAL_PURPLE
+*color13: GRUVBOX_BRIGHT_PURPLE
+*color6:  GRUVBOX_NEUTRAL_AQUA
+*color14: GRUVBOX_BRIGHT_AQUA
+*color7:  GRUVBOX_LIGHT4
+*color15: GRUVBOX_LIGHT1
+
+# endif
 #endif
