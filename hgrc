@@ -18,6 +18,7 @@ git = True
 hgext.color =
 hgext.convert =
 hgext.extdiff =
+hgext.git =
 hgext.pager =
 hgext.rebase =
 hgext.record =
