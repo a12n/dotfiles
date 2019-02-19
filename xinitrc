@@ -3,10 +3,10 @@
 setxkbmap -option 'compose:ralt,ctrl:nocaps,grp:rctrl_toggle' \
           -layout 'us,ru(typewriter),epo,gr(bare)'
 wmname LG3D
-xrdb ~/.Xresources
+xrdb -D_GRUVBOX ~/.Xresources
 xset -b r rate 200 35
 xsetroot -cursor_name left_ptr
-xsetroot -solid '#002b36'
+xsetroot -solid '#3c3836'
 
 case $(uname -s) in
     OpenBSD)
