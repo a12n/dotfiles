@@ -1,23 +1,23 @@
 # -*- conf -*-
 
 [general]
-accounts = bestmx_net
+accounts = bestmx,intabs
 metadata = ~/mail/.offlineimap
 maxsyncaccounts = 2
 ui = basic
 
 ########################################################################
 
-[Account bestmx_net]
-localrepository = local_bestmx_net
-remoterepository = remote_bestmx_net
+[Account bestmx]
+localrepository = local_bestmx
+remoterepository = remote_bestmx
 
-[Repository local_bestmx_net]
+[Repository local_bestmx]
 type = Maildir
 localfolders = ~/mail/arn@bestmx.net
 nametrans = lambda folder: folder if (folder == 'INBOX') else ('INBOX.' + folder)
 
-[Repository remote_bestmx_net]
+[Repository remote_bestmx]
 type = IMAP
 remotehost = mail.bestmx.net
 maxconnections = 2
