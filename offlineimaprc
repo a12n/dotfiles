@@ -7,7 +7,6 @@ maxsyncaccounts = 2
 ui = basic
 
 ########################################################################
-# arn@bestmx.net
 
 [Account bestmx_net]
 localrepository = local_bestmx_net
@@ -25,3 +24,21 @@ maxconnections = 2
 ssl = yes
 cert_fingerprint = 79982184de22c6c1fd99645e80435f43be646ee2
 nametrans = lambda folder: folder.replace('INBOX/', '')
+
+########################################################################
+
+[Account intabs]
+localrepository = local_intabs
+remoterepository = remote_intabs
+
+[Repository local_intabs]
+type = Maildir
+localfolders = ~/mail/arn@intabs.net
+
+[Repository remote_intabs]
+type = IMAP
+remotehost = intabs.net
+maxconnections = 2
+ssl = no
+starttls = yes
+tls_level = tls_secure
