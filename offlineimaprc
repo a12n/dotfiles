@@ -23,5 +23,5 @@ type = IMAP
 remotehost = mail.bestmx.net
 maxconnections = 2
 ssl = yes
-cert_fingerprint = acb3079a5fd9f7a37e4232fc22de021a208597ef
+cert_fingerprint = 79982184de22c6c1fd99645e80435f43be646ee2
 nametrans = lambda folder: folder.replace('INBOX/', '')
