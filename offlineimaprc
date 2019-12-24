@@ -14,7 +14,7 @@ remoterepository = remote_bestmx
 
 [Repository local_bestmx]
 type = Maildir
-localfolders = ~/mail/arn@bestmx.net
+localfolders = ~/mail/bestmx
 nametrans = lambda folder: folder if (folder == 'INBOX') else ('INBOX.' + folder)
 
 [Repository remote_bestmx]
@@ -33,7 +33,7 @@ remoterepository = remote_intabs
 
 [Repository local_intabs]
 type = Maildir
-localfolders = ~/mail/arn@intabs.net
+localfolders = ~/mail/intabs
 
 [Repository remote_intabs]
 type = IMAP
