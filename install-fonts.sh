@@ -2,11 +2,11 @@
 
 mkdir -p ~/.fonts || exit 1
 
+TEMP_DIR=$(mktemp -d)
 TEMP_FILE=$(mktemp)
-trap "rm -rf $TEMP_FILE" EXIT
+trap "rm -rf $TEMP_DIR $TEMP_FILE" EXIT
 
-BASE_URL=http://www.paratype.ru/uni/public
-for FONT in Sans Serif Mono; do
-    curl -L $BASE_URL/PT$FONT.zip -o $TEMP_FILE || exit 1
-    unzip -n -x $TEMP_FILE -d ~/.fonts '*.ttf' || exit 1
-done
+curl -v -H 'Referer: https://www.paratype.ru/collections/pt/44157' \
+     -o $TEMP_FILE 'https://api.paratype.com/api/editions/ofl/download/59384' || exit 1
+unzip -x $TEMP_FILE -d $TEMP_DIR || exit 1
+find $TEMP_DIR -name \*.ttf -exec mv {} ~/.fonts \; || exit 1
