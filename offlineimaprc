@@ -21,9 +21,10 @@ nametrans = lambda folder: folder if (folder == 'INBOX') else ('INBOX.' + folder
 type = IMAP
 remotehost = mail.bestmx.net
 maxconnections = 2
-ssl = yes
-cert_fingerprint = 79982184de22c6c1fd99645e80435f43be646ee2
 nametrans = lambda folder: folder.replace('INBOX/', '')
+ssl = no
+starttls = yes
+tls_level = tls_secure
 
 ########################################################################
 
