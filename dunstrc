@@ -9,7 +9,7 @@ dmenu =
 follow = keyboard
 font = PT Mono 13
 format = "%s\n%b"
-geometry = "384x8-32-32"
+geometry = "512x8-32-32"
 history_length = 16
 horizontal_padding = 10
 icon_position = off
@@ -29,7 +29,7 @@ transparency = 0
 word_wrap = yes
 
 [frame]
-color = "#268bd2"
+color = "#458588"
 width = 2
 
 [shortcuts]
@@ -39,16 +39,16 @@ context =
 history = mod4+m
 
 [urgency_low]
-background = "#002b36"
-foreground = "#839496"
+background = "#282828"
+foreground = "#EBDBB2"
 timeout = 3
 
 [urgency_normal]
-background = "#073642"
-foreground = "#839496"
+background = "#3C3836"
+foreground = "#EBDBB2"
 timeout = 5
 
 [urgency_critical]
-background = "#dc322f"
-foreground = "#eee8d5"
+background = "#CC241D"
+foreground = "#EBDBB2"
 timeout = 0
