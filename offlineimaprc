@@ -14,16 +14,17 @@ remoterepository = remote_bestmx
 
 [Repository local_bestmx]
 type = Maildir
-localfolders = ~/mail/arn@bestmx.net
+localfolders = ~/mail/bestmx
 nametrans = lambda folder: folder if (folder == 'INBOX') else ('INBOX.' + folder)
 
 [Repository remote_bestmx]
 type = IMAP
 remotehost = mail.bestmx.net
 maxconnections = 2
-ssl = yes
-cert_fingerprint = 79982184de22c6c1fd99645e80435f43be646ee2
 nametrans = lambda folder: folder.replace('INBOX/', '')
+ssl = no
+starttls = yes
+tls_level = tls_secure
 
 ########################################################################
 
@@ -33,7 +34,7 @@ remoterepository = remote_intabs
 
 [Repository local_intabs]
 type = Maildir
-localfolders = ~/mail/arn@intabs.net
+localfolders = ~/mail/intabs
 
 [Repository remote_intabs]
 type = IMAP
