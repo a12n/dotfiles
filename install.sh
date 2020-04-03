@@ -15,7 +15,9 @@ for x in \
     ocamlinit \
     offlineimaprc \
     profile \
-    xinitrc
+    xinitrc \
+    zlogin \
+    zshrc
 do
     if [ -e ~/.$x ]; then
         echo "$EXISTS ~/.$x"
