@@ -20,3 +20,6 @@
 
 [user]
 	name = Anton Yabchinskiy
+
+[credential]
+	helper = cache --timeout=86400
