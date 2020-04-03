@@ -1,6 +1,6 @@
 #!/bin/sh
 
-opam init -n -c 4.08.1 || exit 1
+opam init -n -c 4.10.0 || exit 1
 opam install -y \
      base \
      batteries \
