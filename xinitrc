@@ -8,6 +8,9 @@ xset -b r rate 200 35
 xsetroot -cursor_name left_ptr
 xsetroot -solid '#3c3836'
 
+# T480s
+xinput --set-prop 'Elan TrackPoint' 'libinput Accel Speed' -1
+
 case $(uname -s) in
     OpenBSD)
         find $LOCALBASE/share/fonts \
