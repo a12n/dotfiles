@@ -10,11 +10,9 @@ for x in \
     gdbinit \
     gitconfig \
     hgrc \
-    kshrc \
     latexmkrc \
     ocamlinit \
     offlineimaprc \
-    profile \
     xinitrc \
     zlogin \
     zshrc
