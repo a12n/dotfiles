@@ -38,6 +38,10 @@ alias ec='emacsclient'
 alias grep='grep --color=auto'
 alias j='jobs -l'
 alias ls='ls -aF --color=auto'
+alias tjt='tar -vtjf'
+alias tzt='tar -vtzf'
+alias xjt='tar -vxjf'
+alias xzt='tar -vxzf'
 
 # Env variables
 
