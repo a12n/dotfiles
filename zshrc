@@ -11,6 +11,9 @@ path=(~/.local/bin $path)
 autoload -U colors
 colors
 
+autoload -U select-word-style
+select-word-style bash
+
 # VCS info
 
 autoload -U vcs_info
