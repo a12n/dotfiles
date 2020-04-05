@@ -14,7 +14,7 @@ colors
 # VCS info
 
 autoload -U vcs_info
-zstyle ':vcs_info:*' actionformats '%s %{%F{yellow}%}%b%{%f%}|%{%F{red}%}%a%{%f%}'
+zstyle ':vcs_info:*' actionformats '%s %{%F{yellow}%}%b%{%f%} %{%F{red}%}%a%{%f%}'
 zstyle ':vcs_info:*' enable git hg
 zstyle ':vcs_info:*' formats '%s %{%F{yellow}%}%b%{%f%}'
 
