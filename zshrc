@@ -17,10 +17,9 @@ select-word-style bash
 # VCS info
 
 autoload -U vcs_info
-zstyle ':vcs_info:*' actionformats '%s %{%F{yellow}%}%7.7i %b%{%f%} %{%F{red}%}%a%{%f%}'
+zstyle ':vcs_info:*' actionformats '%s %{%F{yellow}%}%b%{%f%} %{%F{red}%}%a%{%f%}'
 zstyle ':vcs_info:*' enable git hg
-zstyle ':vcs_info:*' formats '%s %{%F{yellow}%}%7.7i %b%{%f%}'
-zstyle ':vcs_info:*' get-revision true
+zstyle ':vcs_info:*' formats '%s %{%F{yellow}%}%b%{%f%}'
 
 precmd() {
     vcs_info
