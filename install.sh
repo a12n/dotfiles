@@ -18,11 +18,13 @@ for x in \
     zlogin \
     zshrc
 do
-    if [ -e ~/.$x ]; then
-        printf "$EXISTS ~/.$x\n"
+    src=$PWD/$x
+    dest=~/.$x
+    if [ -e $dest ]; then
+        printf "$EXISTS $dest\n"
     else
-        ln -s $PWD/$x ~/.$x || exit 1
-        printf "$LINKED ~/.$x\n"
+        ln -s $src $dest || exit 1
+        printf "$LINKED $dest\n"
     fi
 done
 
