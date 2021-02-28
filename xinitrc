@@ -11,19 +11,6 @@ xsetroot -solid '#3c3836'
 # T480s
 xinput --set-prop 'Elan TrackPoint' 'libinput Accel Speed' -1
 
-case $(uname -s) in
-    OpenBSD)
-        find $LOCALBASE/share/fonts \
-            -type d \
-            -mindepth 1 \
-            -maxdepth 1 \
-            -exec xset fp+ {} \;
-        if [ -z "${DBUS_SESSION_BUS_ADDRESS}" ]; then
-	        eval $($LOCALBASE/bin/dbus-launch --sh-syntax --exit-with-session)
-        fi
-        ;;
-esac
-
 export RXVT_SOCKET=$(mktemp -d -t urxvt-XXXXXXXXXXX)/urxvtd
 urxvtd --fork --opendisplay
 
