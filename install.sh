@@ -16,7 +16,8 @@ for x in \
     offlineimaprc \
     xinitrc \
     zlogin \
-    zshrc
+    zshrc \
+    config/dunst/dunstrc
 do
     src=$PWD/$x
     dest=~/.$x
@@ -29,18 +30,6 @@ do
         fi
         ln -s $src $dest || exit 1
         printf "$LINKED $dest\n"
-    fi
-done
-
-for d in \
-    ~/.config/dunst/dunstrc
-do
-    if [ -e $d ]; then
-        printf "$EXISTS $d\n"
-    else
-        mkdir -p $(dirname $d) || exit 1
-        ln -s $PWD/$(basename $d) $d || exit 1
-        printf "$LINKED $d\n"
     fi
 done
 
