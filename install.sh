@@ -1,7 +1,7 @@
 #!/bin/sh
 
-EXISTS="$(tput setaf 1)EXISTS$(tput sgr0)"
-LINKED="$(tput setaf 2)LINKED$(tput sgr0)"
+EXISTS="\x1b[38;5;1mEXISTS\x1b[m"
+LINKED="\x1b[38;5;2mLINKED\x1b[m"
 
 cd $(dirname $0)
 for x in \
