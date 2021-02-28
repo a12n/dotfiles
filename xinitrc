@@ -21,7 +21,7 @@ cat<<EOF | ~/.local/bin/dwmstatus &
 loadavg 5
 cputemp 3
 battery 5
-maildir 90 "${HOME}/mail/${EMAIL}/INBOX" "${HOME}/mail/${EMAIL}/Work"
+maildir 90
 utime 1
 EOF
 
