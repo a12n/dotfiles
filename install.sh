@@ -4,6 +4,7 @@ EXISTS="\x1b[38;5;1mEXISTS\x1b[m"
 LINKED="\x1b[38;5;2mLINKED\x1b[m"
 
 cd $(dirname $0)
+
 for x in \
     XCompose \
     Xresources \
@@ -18,10 +19,10 @@ for x in \
     zshrc
 do
     if [ -e ~/.$x ]; then
-        echo "$EXISTS ~/.$x"
+        printf "$EXISTS ~/.$x\n"
     else
         ln -s $PWD/$x ~/.$x || exit 1
-        echo "$LINKED ~/.$x"
+        printf "$LINKED ~/.$x\n"
     fi
 done
 
