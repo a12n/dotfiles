@@ -26,5 +26,17 @@ do
     fi
 done
 
+for d in \
+    ~/.config/dunst/dunstrc
+do
+    if [ -e $d ]; then
+        printf "$EXISTS $d\n"
+    else
+        mkdir -p $(dirname $d) || exit 1
+        ln -s $PWD/$(basename $d) $d || exit 1
+        printf "$LINKED $d\n"
+    fi
+done
+
 mkdir -p \
       ~/.local/bin ~/proj
