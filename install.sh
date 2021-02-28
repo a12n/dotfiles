@@ -1,9 +1,10 @@
 #!/bin/sh
 
-EXISTS="$(tput setaf 1)EXISTS$(tput sgr0)"
-LINKED="$(tput setaf 2)LINKED$(tput sgr0)"
+EXISTS="\x1b[38;5;1mEXISTS\x1b[m"
+LINKED="\x1b[38;5;2mLINKED\x1b[m"
 
 cd $(dirname $0)
+
 for x in \
     XCompose \
     Xresources \
@@ -15,13 +16,20 @@ for x in \
     offlineimaprc \
     xinitrc \
     zlogin \
-    zshrc
+    zshrc \
+    config/dunst/dunstrc
 do
-    if [ -e ~/.$x ]; then
-        echo "$EXISTS ~/.$x"
+    src=$PWD/$x
+    dest=~/.$x
+    destdir=$(dirname $dest)
+    if [ -e $dest ]; then
+        printf "$EXISTS $dest\n"
     else
-        ln -s $PWD/$x ~/.$x || exit 1
-        echo "$LINKED ~/.$x"
+        if [ ! -d $destdir ]; then
+            mkdir -p $destdir || exit 1
+        fi
+        ln -s $src $dest || exit 1
+        printf "$LINKED $dest\n"
     fi
 done
 
