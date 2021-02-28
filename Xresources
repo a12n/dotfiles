@@ -1,16 +1,8 @@
 ! -*- mode: xrdb -*-
 
-#ifndef FONT_SIZE
-# if (HEIGHT >= 1000)
-#  define FONT_SIZE 15
-# else
-#  define FONT_SIZE 13
-# endif
-#endif
+Emacs.font: PT Mono-15
 
-Emacs.font: PT Mono-FONT_SIZE
-
-Rxvt*font: xft:PT Mono:size=FONT_SIZE
+Rxvt*font: xft:PT Mono:size=15
 Rxvt*pointerBlank: true
 Rxvt*scrollBar: false
 
