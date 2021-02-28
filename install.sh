@@ -20,9 +20,13 @@ for x in \
 do
     src=$PWD/$x
     dest=~/.$x
+    destdir=$(dirname $dest)
     if [ -e $dest ]; then
         printf "$EXISTS $dest\n"
     else
+        if [ ! -d $destdir ]; then
+            mkdir -p $destdir || exit 1
+        fi
         ln -s $src $dest || exit 1
         printf "$LINKED $dest\n"
     fi
