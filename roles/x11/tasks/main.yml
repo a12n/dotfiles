@@ -1,0 +1,7 @@
+- name: install packages
+  package:
+    name:
+      - dunst
+      - mupdf
+      - redshift
+    state: present
