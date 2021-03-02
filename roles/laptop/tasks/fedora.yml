@@ -4,3 +4,13 @@
       - acpid
       - alsa-utils
     state: present
+
+- name: install action scripts
+  copy:
+    src: {{ item }}
+    dest: /etc/acpi/actions/
+    owner: root
+    group: root
+    mode: u=rwx,g=rx,o=rx
+  with_items:
+    - t470-backlight
