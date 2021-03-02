@@ -1,3 +1,7 @@
 ---
 - hosts: all
   roles:
+    - role: laptop
+      when:
+        - ansible_system == "Linux"
+        - ansible_product_version in ["ThinkPad T470", "ThinkPad T480s"]
