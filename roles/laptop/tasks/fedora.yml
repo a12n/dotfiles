@@ -14,3 +14,11 @@
     mode: u=rwx,g=rx,o=rx
   with_items:
     - t470-backlight
+
+- name: install event scripts
+  template:
+    src: t470-brightness.j2
+    dest: "/etc/acpi/events/t470-brightness{{ item }}"
+  with_items:
+    - down
+    - up

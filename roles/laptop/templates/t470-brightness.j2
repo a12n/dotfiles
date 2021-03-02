@@ -1,0 +1,2 @@
+event=video/brightness{{ item }}
+action=/etc/acpi/{% if ansible_distribution == "Fedora" %}actions/{% endif %}t470-backlight {{ item }}
