@@ -7,7 +7,7 @@
 
 - name: install action scripts
   copy:
-    src: {{ item }}
+    src: "{{ item }}"
     dest: /etc/acpi/actions/
     owner: root
     group: root

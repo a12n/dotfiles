@@ -3,7 +3,7 @@
 
 - name: install event scripts
   copy:
-    src: {{ item }}
+    src: "{{ item }}"
     dest: /etc/acpi/events/
     owner: root
     group: root
