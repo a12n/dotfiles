@@ -1,0 +1,6 @@
+- name: install packages
+  dnf:
+    name:
+      - acpid
+      - alsa-utils
+    state: present
