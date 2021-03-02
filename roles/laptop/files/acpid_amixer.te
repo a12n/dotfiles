@@ -1,0 +1,14 @@
+
+module acpid_amixer 1.0;
+
+require {
+	type apmd_t;
+	type sound_device_t;
+	type alsa_etc_rw_t;
+	class file { getattr open read };
+	class chr_file { ioctl open read write };
+}
+
+#============= apmd_t ==============
+allow apmd_t alsa_etc_rw_t:file { getattr open read };
+allow apmd_t sound_device_t:chr_file { ioctl open read write };
