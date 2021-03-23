@@ -19,3 +19,4 @@
     - t470-mute
     - t470-volumedown
     - t470-volumeup
+  when: ansible_distribution in ["Debian", "Fedora"]
