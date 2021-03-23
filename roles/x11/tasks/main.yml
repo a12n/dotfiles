@@ -10,3 +10,12 @@
       - rxvt-unicode
       - youtube-dl
     state: present
+
+- name: install packages
+  package:
+    name:
+      - paratype-pt-mono-fonts
+      - paratype-pt-serif-caption-fonts
+      - paratype-pt-serif-fonts
+    state: present
+  when: ansible_distribution == "Fedora"
