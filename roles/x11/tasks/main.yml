@@ -1,7 +1,12 @@
 - name: install packages
   package:
     name:
+      - chromium
+      - dmenu
       - dunst
+      - mpv
       - mupdf
       - redshift
+      - rxvt-unicode
+      - youtube-dl
     state: present
