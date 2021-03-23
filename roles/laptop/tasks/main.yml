@@ -1,6 +1,12 @@
 - import_tasks: fedora.yml
   when: ansible_distribution == "Fedora"
 
+- name: install packages
+  package:
+    name:
+      - tlp
+    state: present
+
 - name: install event scripts
   copy:
     src: "{{ item }}"
