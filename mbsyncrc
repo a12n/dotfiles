@@ -1,0 +1,48 @@
+IMAPAccount bestmx
+Host mail.bestmx.net
+UserCmd "pass mail/bestmx.net | awk 'NR == 2 { print $2 }'"
+PassCmd "pass mail/bestmx.net | awk 'NR == 1'"
+SSLType STARTTLS
+SSLVersions TLSv1.2
+
+IMAPStore bestmx-remote
+Account bestmx
+
+MaildirStore bestmx-local
+Path ~/Maildir/bestmx/
+Inbox ~/Maildir/bestmx/INBOX/
+SubFolders Verbatim
+
+Channel bestmx
+Far :bestmx-remote:
+Near :bestmx-local:
+Pattern * !"Archive"
+Create Near
+Remove Near
+SyncState *
+CopyArrivalDate yes
+
+
+IMAPAccount intabs
+Host intabs.net
+UserCmd "pass mail/intabs.net | awk 'NR == 2 { print $2 }'"
+PassCmd "pass mail/intabs.net | awk 'NR == 1'"
+SSLType STARTTLS
+SSLVersions TLSv1.2
+
+IMAPStore intabs-remote
+Account intabs
+
+MaildirStore intabs-local
+Path ~/Maildir/intabs/
+Inbox ~/Maildir/intabs/INBOX/
+SubFolders Verbatim
+
+Channel intabs
+Far :intabs-remote:
+Near :intabs-local:
+Pattern * !"Archive"
+Create Near
+Remove Near
+SyncState *
+CopyArrivalDate yes
