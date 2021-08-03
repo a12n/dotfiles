@@ -60,6 +60,8 @@ export MANPAGER=less
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 export _JAVA_AWT_WM_NONREPARENTING=1
 
+eval $(opam env)
+
 # Functions
 
 ecp() {
