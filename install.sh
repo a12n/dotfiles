@@ -12,6 +12,7 @@ for x in \
     gitconfig \
     hgrc \
     latexmkrc \
+    mbsyncrc \
     ocamlinit \
     offlineimaprc \
     xinitrc \
