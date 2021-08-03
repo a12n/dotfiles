@@ -14,7 +14,6 @@ for x in \
     latexmkrc \
     mbsyncrc \
     ocamlinit \
-    offlineimaprc \
     xinitrc \
     zlogin \
     zshrc \
