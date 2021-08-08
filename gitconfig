@@ -9,9 +9,6 @@
 	st = status
 	subm = submodule
 
-[color]
-	ui = auto
-
 [pager]
 	branch = false
 

@@ -36,7 +36,6 @@ SAVEHIST=1000
 
 # Aliases
 
-alias cal='ncal -b'
 alias ec='emacsclient'
 alias grep='grep --color=auto'
 alias j='jobs -l'
@@ -48,6 +47,7 @@ alias xzt='tar -vxzf'
 
 # Env variables
 
+export CHROMIUM_USER_FLAGS=--force-device-scale-factor=1.2
 export EDITOR=emacsclient
 export EMAIL=arn@bestmx.net
 export ERL_AFLAGS="-kernel shell_history enabled"
@@ -57,7 +57,10 @@ export LESS=FRX
 export LESSHISTFILE=/dev/null
 export LESSSECURE=1
 export MANPAGER=less
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 export _JAVA_AWT_WM_NONREPARENTING=1
+
+eval $(opam env)
 
 # Functions
 
