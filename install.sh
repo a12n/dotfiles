@@ -17,7 +17,8 @@ for x in \
     xinitrc \
     zlogin \
     zshrc \
-    config/dunst/dunstrc
+    config/dunst/dunstrc \
+    gnupg/gpg-agent.conf
 do
     src=$PWD/$x
     dest=~/.$x
