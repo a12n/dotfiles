@@ -36,7 +36,7 @@ SAVEHIST=1000
 
 # Aliases
 
-alias cal='ncal -b'
+alias cal='cal -m'
 alias ec='emacsclient'
 alias grep='grep --color=auto'
 alias j='jobs -l'
