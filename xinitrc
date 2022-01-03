@@ -21,7 +21,7 @@ cat<<EOF | ~/.local/bin/dwmstatus &
 loadavg 5
 cputemp 3
 battery 5
-maildir 90 $HOME/Maildir/bestmx/INBOX/ $HOME/Maildir/intabs/INBOX/ $HOME/Maildir/local/INBOX/
+maildir 90 $HOME/Maildir/bestmx/INBOX/ $HOME/Maildir/intabs/INBOX/
 utime 1
 EOF
 
