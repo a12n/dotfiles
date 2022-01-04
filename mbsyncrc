@@ -19,6 +19,7 @@ Near :bestmx-local:
 Pattern * !"Archive"
 Create Near
 Remove Near
+Expunge Both
 SyncState *
 CopyArrivalDate yes
 
@@ -44,5 +45,6 @@ Near :intabs-local:
 Pattern * !"Archive"
 Create Near
 Remove Near
+Expunge Both
 SyncState *
 CopyArrivalDate yes
