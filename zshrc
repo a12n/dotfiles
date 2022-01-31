@@ -1,6 +1,5 @@
 # -*- mode: sh; sh-shell: zsh -*-
 
-setopt NO_AUTO_MENU
 setopt NO_BEEP
 setopt NO_MENU_COMPLETE
 setopt PROMPT_SUBST
