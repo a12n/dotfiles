@@ -50,7 +50,7 @@ alias xzt='tar -vxzf'
 
 # Env variables
 
-export CHROMIUM_USER_FLAGS=--force-device-scale-factor=1.2
+export CHROMIUM_FLAGS=--force-device-scale-factor=1.2
 export EDITOR=emacsclient
 export EMAIL=arn@bestmx.net
 export ERL_AFLAGS="-kernel shell_history enabled"
