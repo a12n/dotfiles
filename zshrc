@@ -13,6 +13,9 @@ colors
 autoload -U select-word-style
 select-word-style bash
 
+autoload -U compinit
+compinit
+
 # VCS info
 
 autoload -U vcs_info
