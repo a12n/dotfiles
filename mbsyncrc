@@ -48,3 +48,28 @@ Remove Near
 Expunge Both
 SyncState *
 CopyArrivalDate yes
+
+
+IMAPAccount yandex
+Host imap.yandex.ru
+UserCmd "pass mail/yandex.ru/mbsync | awk 'NR == 2 { print $2 }'"
+PassCmd "pass mail/yandex.ru/mbsync | awk 'NR == 1'"
+SSLType IMAPS
+
+IMAPStore yandex-remote
+Account yandex
+
+MaildirStore yandex-local
+Path ~/Maildir/yandex/
+Inbox ~/Maildir/yandex/INBOX/
+SubFolders Verbatim
+
+Channel yandex
+Far :yandex-remote:
+Near :yandex-local:
+Pattern * !"Archive"
+Create Near
+Remove Near
+Expunge Both
+SyncState *
+CopyArrivalDate yes
