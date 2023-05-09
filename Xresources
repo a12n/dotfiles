@@ -1,8 +1,8 @@
 ! -*- mode: xrdb -*-
 
-Emacs.font: PT Mono-15
+Emacs.font: JetBrains Mono-15
 
-Rxvt*font: xft:PT Mono:size=15
+Rxvt*font: xft:JetBrains Mono-15
 Rxvt*pointerBlank: true
 Rxvt*scrollBar: false
 
