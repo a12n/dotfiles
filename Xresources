@@ -8,92 +8,44 @@ Rxvt*scrollBar: false
 
 ! Colors
 
-#if defined _SOLARIZED
-# define SOLARIZED_YELLOW  #b58900
-# define SOLARIZED_ORANGE  #cb4b16
-# define SOLARIZED_RED     #dc322f
-# define SOLARIZED_MAGENTA #d33682
-# define SOLARIZED_VIOLET  #6c71c4
-# define SOLARIZED_BLUE    #268bd2
-# define SOLARIZED_CYAN    #2aa198
-# define SOLARIZED_GREEN   #859900
-# ifdef _LIGHT
-#  define SOLARIZED_BASE03  #fdf6e3
-#  define SOLARIZED_BASE02  #eee8d5
-#  define SOLARIZED_BASE01  #93a1a1
-#  define SOLARIZED_BASE00  #839496
-#  define SOLARIZED_BASE0   #657b83
-#  define SOLARIZED_BASE1   #586e75
-#  define SOLARIZED_BASE2   #073642
-#  define SOLARIZED_BASE3   #002b36
-# else
-#  define SOLARIZED_BASE03  #002b36
-#  define SOLARIZED_BASE02  #073642
-#  define SOLARIZED_BASE01  #586e75
-#  define SOLARIZED_BASE00  #657b83
-#  define SOLARIZED_BASE0   #839496
-#  define SOLARIZED_BASE1   #93a1a1
-#  define SOLARIZED_BASE2   #eee8d5
-#  define SOLARIZED_BASE3   #fdf6e3
-# endif
+#define GRUVBOX_DARK0            #282828
+#define GRUVBOX_DARK1            #3c3836
+#define GRUVBOX_DARK2            #504945
+#define GRUVBOX_DARK3            #665c54
+#define GRUVBOX_DARK4            #7c6f64
+#define GRUVBOX_GRAY             #928374
+#define GRUVBOX_LIGHT0           #fbf1c7
+#define GRUVBOX_LIGHT1           #ebdbb2
+#define GRUVBOX_LIGHT2           #d5c4a1
+#define GRUVBOX_LIGHT3           #bdae93
+#define GRUVBOX_LIGHT4           #a89984
+#define GRUVBOX_BRIGHT_RED       #fb4934
+#define GRUVBOX_BRIGHT_GREEN     #b8bb26
+#define GRUVBOX_BRIGHT_YELLOW    #fabd2f
+#define GRUVBOX_BRIGHT_BLUE      #83a598
+#define GRUVBOX_BRIGHT_PURPLE    #d3869b
+#define GRUVBOX_BRIGHT_AQUA      #8ec07c
+#define GRUVBOX_BRIGHT_ORANGE    #fe8019
+#define GRUVBOX_NEUTRAL_RED      #cc241d
+#define GRUVBOX_NEUTRAL_GREEN    #98971a
+#define GRUVBOX_NEUTRAL_YELLOW   #d79921
+#define GRUVBOX_NEUTRAL_BLUE     #458588
+#define GRUVBOX_NEUTRAL_PURPLE   #b16286
+#define GRUVBOX_NEUTRAL_AQUA     #689d6a
+#define GRUVBOX_NEUTRAL_ORANGE   #d65d0e
+#define GRUVBOX_FADED_RED        #9d0006
+#define GRUVBOX_FADED_GREEN      #79740e
+#define GRUVBOX_FADED_YELLOW     #b57614
+#define GRUVBOX_FADED_BLUE       #076678
+#define GRUVBOX_FADED_PURPLE     #8f3f71
+#define GRUVBOX_FADED_AQUA       #427b58
+#define GRUVBOX_FADED_ORANGE     #af3a03
 
-*background: SOLARIZED_BASE03
-*foreground: SOLARIZED_BASE0
-*color0: SOLARIZED_BASE02
-*color1: SOLARIZED_RED
-*color2: SOLARIZED_GREEN
-*color3: SOLARIZED_YELLOW
-*color4: SOLARIZED_BLUE
-*color5: SOLARIZED_MAGENTA
-*color6: SOLARIZED_CYAN
-*color7: SOLARIZED_BASE2
-*color8: SOLARIZED_BASE03
-*color9: SOLARIZED_ORANGE
-*color10: SOLARIZED_BASE01
-*color11: SOLARIZED_BASE00
-*color12: SOLARIZED_BASE0
-*color13: SOLARIZED_VIOLET
-*color14: SOLARIZED_BASE1
-*color15: SOLARIZED_BASE3
-
-#else
-# define GRUVBOX_DARK0            #282828
-# define GRUVBOX_DARK1            #3c3836
-# define GRUVBOX_DARK2            #504945
-# define GRUVBOX_DARK3            #665c54
-# define GRUVBOX_DARK4            #7c6f64
-# define GRUVBOX_GRAY             #928374
-# define GRUVBOX_LIGHT0           #fbf1c7
-# define GRUVBOX_LIGHT1           #ebdbb2
-# define GRUVBOX_LIGHT2           #d5c4a1
-# define GRUVBOX_LIGHT3           #bdae93
-# define GRUVBOX_LIGHT4           #a89984
-# define GRUVBOX_BRIGHT_RED       #fb4934
-# define GRUVBOX_BRIGHT_GREEN     #b8bb26
-# define GRUVBOX_BRIGHT_YELLOW    #fabd2f
-# define GRUVBOX_BRIGHT_BLUE      #83a598
-# define GRUVBOX_BRIGHT_PURPLE    #d3869b
-# define GRUVBOX_BRIGHT_AQUA      #8ec07c
-# define GRUVBOX_BRIGHT_ORANGE    #fe8019
-# define GRUVBOX_NEUTRAL_RED      #cc241d
-# define GRUVBOX_NEUTRAL_GREEN    #98971a
-# define GRUVBOX_NEUTRAL_YELLOW   #d79921
-# define GRUVBOX_NEUTRAL_BLUE     #458588
-# define GRUVBOX_NEUTRAL_PURPLE   #b16286
-# define GRUVBOX_NEUTRAL_AQUA     #689d6a
-# define GRUVBOX_NEUTRAL_ORANGE   #d65d0e
-# define GRUVBOX_FADED_RED        #9d0006
-# define GRUVBOX_FADED_GREEN      #79740e
-# define GRUVBOX_FADED_YELLOW     #b57614
-# define GRUVBOX_FADED_BLUE       #076678
-# define GRUVBOX_FADED_PURPLE     #8f3f71
-# define GRUVBOX_FADED_AQUA       #427b58
-# define GRUVBOX_FADED_ORANGE     #af3a03
 # if defined _LIGHT
 
 *background: GRUVBOX_LIGHT0
 *foreground: GRUVBOX_DARK1
-*color0:  #fdf4c1
+*color0:  GRUVBOX_LIGHT0
 *color8:  GRUVBOX_GRAY
 *color1:  GRUVBOX_NEUTRAL_RED
 *color9:  GRUVBOX_FADED_RED
@@ -132,4 +84,3 @@ Rxvt*scrollBar: false
 *color15: GRUVBOX_LIGHT1
 
 # endif
-#endif
