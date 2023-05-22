@@ -5,6 +5,7 @@ Emacs.font: JetBrains Mono-15
 Rxvt*font: xft:JetBrains Mono-15
 Rxvt*pointerBlank: true
 Rxvt*scrollBar: false
+Rxvt*fading: 40
 
 ! Colors
 
@@ -43,6 +44,8 @@ Rxvt*scrollBar: false
 
 # if defined _LIGHT
 
+Rxvt*fadeColor: GRUVBOX_LIGHT0
+
 *background: GRUVBOX_LIGHT0
 *foreground: GRUVBOX_DARK1
 *color0:  GRUVBOX_LIGHT0
@@ -63,6 +66,8 @@ Rxvt*scrollBar: false
 *color15: GRUVBOX_DARK1
 
 # else
+
+Rxvt*fadeColor: GRUVBOX_DARK0
 
 *background: GRUVBOX_DARK0
 *foreground: GRUVBOX_LIGHT1
