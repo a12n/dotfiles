@@ -7,8 +7,6 @@ include "%L"
 
 <Multi_key> <Cyrillic_ER> <equal> : "₽" U20BD # RUBLE SIGN
 <Multi_key> <equal> <Cyrillic_ER> : "₽" U20BD # RUBLE SIGN
-<Multi_key> <P> <equal>           : "₽" U20BD # RUBLE SIGN
-<Multi_key> <equal> <P>           : "₽" U20BD # RUBLE SIGN
 
 # Dashes/hyphens
 
@@ -52,12 +50,6 @@ include "%L"
 <Multi_key> <n> <s> <u>          : "⊄" U2284 # NOT A SUBSET OF
 <Multi_key> <i> <x> <t>          : "∩" U2229 # INTERSECTION
 <Multi_key> <u> <n> <i>          : "∪" U222A # UNION
-
-<Multi_key> <N> <N>              : "ℕ" U2115 # DOUBLE-STRUCK CAPITAL N
-<Multi_key> <Z> <Z>              : "ℤ" U2124 # DOUBLE-STRUCK CAPITAL Z
-<Multi_key> <Q> <Q>              : "ℚ" U211A # DOUBLE-STRUCK CAPITAL Q
-<Multi_key> <R> <R>              : "ℝ" U211D # DOUBLE-STRUCK CAPITAL R
-<Multi_key> <X> <X>              : "ℂ" U2102 # DOUBLE-STRUCK CAPITAL C
 
 <Multi_key> <a> <l> <l>          : "∀" U2200 # FOR ALL
 <Multi_key> <e> <x> <i>          : "∃" U2203 # THERE EXISTS
