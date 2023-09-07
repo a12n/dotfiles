@@ -5,9 +5,8 @@ setxkbmap -option 'compose:ralt,ctrl:nocaps,grp:rctrl_toggle' \
 wmname LG3D
 xrdb ~/.Xresources
 xset -b r rate 200 35 s 600
-xsetroot -cursor_name left_ptr
-display -gravity center -crop 16:9 -window root ~/.config/wallpaper || \
-    xsetroot -solid '#3c3836'
+xsetroot -cursor_name left_ptr -solid '#3c3836'
+display -gravity center -crop 16:9 -window root ~/.config/wallpaper
 
 # T480s
 xinput --set-prop 'Elan TrackPoint' 'libinput Accel Speed' -1
