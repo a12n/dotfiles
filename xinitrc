@@ -10,8 +10,10 @@ if [ -f ~/.config/wallpaper ]; then
     display -gravity center -crop 16:9 -window root ~/.config/wallpaper
 fi
 
-# T480s
-xinput --set-prop 'Elan TrackPoint' 'libinput Accel Speed' -0.67
+# T480s, L14
+for TRACKPOINT in "Elan TrackPoint" "TPPS/2 Elan TrackPoint"; do
+    xinput --set-prop "$TRACKPOINT" "libinput Accel Speed" -0.67
+done
 
 export RXVT_SOCKET=$(mktemp -d -t urxvt-XXXXXXXXXXX)/urxvtd
 urxvtd --fork --opendisplay
