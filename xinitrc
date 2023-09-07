@@ -11,7 +11,7 @@ if [ -f ~/.config/wallpaper ]; then
 fi
 
 # T480s
-xinput --set-prop 'Elan TrackPoint' 'libinput Accel Speed' -1
+xinput --set-prop 'Elan TrackPoint' 'libinput Accel Speed' -0.67
 
 export RXVT_SOCKET=$(mktemp -d -t urxvt-XXXXXXXXXXX)/urxvtd
 urxvtd --fork --opendisplay
