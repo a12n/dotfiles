@@ -13,7 +13,6 @@ for x in \
     hgrc \
     latexmkrc \
     mbsyncrc \
-    ocamlinit \
     xinitrc \
     zlogin \
     zshrc \
