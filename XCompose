@@ -37,6 +37,9 @@ include "%L"
 <Multi_key> <o> <period>         : "∘" U2218 # RING OPERATOR
 <Multi_key> <slash> <period>     : "⁄" U2044 # FRACTION SLASH
 <Multi_key> <slash> <bar>        : "∣" U2223 # DIVIDES
+<Multi_key> <bar> <bar>          : "∥" U2225 # PARALLEL TO
+<Multi_key> <bar> <slash> <bar>  : "∦" U2226 # NOT PARALLEL TO
+<Multi_key> <bar> <underscore>   : "⟂" U27C2 # PERPENDICULAR
 
 <Multi_key> <asterisk> <period>  : "⋅" U22C5 # DOT OPERATOR
 <Multi_key> <asterisk> <x>       : "⨯" U2A2F # VECTOR OR CROSS PRODUCT
