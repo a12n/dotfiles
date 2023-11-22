@@ -17,6 +17,7 @@ for x in \
     zlogin \
     zshrc \
     config/dunst/dunstrc \
+    config/mpd/mpd.conf \
     gnupg/gpg-agent.conf
 do
     src=$PWD/$x
