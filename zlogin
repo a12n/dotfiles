@@ -4,6 +4,6 @@ ulimit -c 0
 
 gpgconf --launch gpg-agent
 
-if [[ -z "$DISPLAY" -a "$(tty)" = "/dev/tty1" ]]; then
+if [[ ! -v DISPLAY && $(tty) == /dev/tty1 ]]; then
     exec startx
 fi
