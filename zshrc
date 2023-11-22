@@ -59,6 +59,7 @@ export LESS=FRX
 export LESSHISTFILE=/dev/null
 export LESSSECURE=1
 export MANPAGER=less
+export MPD_HOST=~/.config/mpd/socket
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 export _JAVA_AWT_WM_NONREPARENTING=1
 
