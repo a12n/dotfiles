@@ -1,7 +1,7 @@
 # -*- mode: sh -*-
 
 setxkbmap -option 'compose:ralt,ctrl:nocaps,grp:rctrl_toggle' \
-          -layout 'us,ru(typewriter),epo,gr(bare)'
+          -layout 'us,ru(typewriter),epo,gr'
 wmname LG3D
 xrdb ~/.Xresources
 xset -b r rate 200 35 s 600
