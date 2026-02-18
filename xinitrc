@@ -10,12 +10,11 @@ if [ -f ~/.config/wallpaper ]; then
     display -gravity center -crop 16:9 -window root ~/.config/wallpaper
 fi
 
-# T480s, T14
-for trackpoint in 'Elan TrackPoint' 'TPPS/2 Elan TrackPoint'; do
-    xinput set-prop $trackpoint 'libinput Accel Speed' -0.67
-done
+# T480s
+xinput set-prop 'Elan TrackPoint' 'libinput Accel Speed' -0.67
 
 # T14
+xinput set-prop 'TPPS/2 Elan TrackPoint' 'libinput Accel Speed' -0.67
 xinput set-button-map 'ELAN0676:00 04F3:3195 Touchpad' \
        0 0 0 \
        4 5 \
